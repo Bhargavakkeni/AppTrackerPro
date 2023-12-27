@@ -31,8 +31,8 @@
     }
 
     #dropArea {
-        width: 300px;
-        height: 200px;
+        width: 600px;
+        height: 300px;
         border: 2px dashed #ccc;
         border-radius: 8px;
         text-align: center;
@@ -89,14 +89,14 @@
         height: -webkit-fill-available;
     }
 
-    span.right{
+    span.right {
         float: right;
         width: 50%;
         padding: 8px;
         text-align: center;
     }
 
-    #tasks{
+    #tasks {
         display: none;
     }
 </style>
@@ -110,7 +110,7 @@
         <div class="col-md-2">
             <ul>
                 <li>
-                    <a href="#Home" class="btn btn-info">Home</a>
+                    <a href="#Home" class="btn btn-info" onclick="handleHome()">Home</a>
                 </li>
                 <li>
                     <a href="#profile" class="btn btn-primary">Profile</a>
@@ -129,53 +129,127 @@
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="Home">
             {% for appdetail in appDetails %}
-            <div class="row details rounded border" onclick="form(event,`{{appdetail|escapejs|safe}}`)">
+            <div class="row details rounded border" onclick="generateDetails(event,`{{appdetail|escapejs|safe}}`)">
                 <div class="col-md-2 imgHeight">
                     <img src="/media/{{ appdetail.icons }}" alt="{{appdetail.appName}}">
                 </div>
                 <div class="col-md-6">
                     <p><span style="font-size: 35px;">{{appdetail.appName}}</span>
                         <br>
-                    <a href="#tasks">View in Detail></a></p>
+                        <a href="#tasks">View in Detail></a>
+                    </p>
                 </div>
                 <div class="col-md-4">
-                    <span class="border rounded bg-success right" >{{appdetail.points}} Points</span>
+                    <span class="border rounded bg-success right">{{appdetail.points}} Points</span>
                 </div>
             </div>
             {% endfor %}
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="tasks">
+            <div class='row'>
+                <form id="screenshotForm" action="saveScreenshot" method="POST" onsubmit="saveScreenshot()">
+                    
+                </form>
+            </div>
         </div>
     </div>
 </div>
 <script>
-    function form(event,appdetail){
+    var formData = new FormData(document.getElementById('screenshotForm'));
+
+    function handleHome(){
+        document.getElementById('tasks').style.display = 'none';
+        document.getElementById('Home').style.display = 'block';
+    }
+    function submitForm(event) {
         event.preventDefault();
-        console.log(typeof(appdetail),appdetail.toString());
+        console.log('formData', formData);
+        fetch('../saveScreenshot', {
+            method: 'POST',
+            body: formData,
+        }).catch(error => console.error('Error', error));
+    }
+    function allowDrop(event) {
+        event.preventDefault();
+        var dropArea = document.getElementById('dropArea');
+        dropArea.style.border = '2px dashed #aaa';
+    }
+
+    function handleDrop(event) {
+        event.preventDefault();
+        var dropArea = document.getElementById('dropArea');
+        dropArea.style.border = '2px dashed #ccc';
+
+        var files = event.dataTransfer.files;
+        handleFiles(files);
+    }
+
+    function handleFileSelect(event) {
+        var files = event.target.files;
+        handleFiles(files);
+    }
+
+    function handleFiles(files) {
+        console.log('handleFiles called');
+        var dropArea = document.getElementById('dropArea');
+        dropArea.innerHTML = '';
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            if (file.type.match('image/jpeg') || file.type.match('image/png')) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var img = new Image();
+                    img.src = e.target.result;
+                    img.id = 'screenshot';
+                    dropArea.appendChild(img);
+                };
+                formData.set('screenshot', file, file.name);
+                reader.readAsDataURL(file);
+            } else {
+                alert('Please upload only .jpg, .jpeg or .png files.');
+            }
+        }
+    }
+    function handleDropAreaClick(event){
+        document.getElementById('screenshot').click();
+    /*document.getElementById('dropArea').addEventListener('click', function () {
+        document.getElementById('screenshot').click();
+    })*/
+}
+
+    function generateDetails(event, appdetail) {
+        event.preventDefault();
         var appdetail = JSON.parse(appdetail.replace(/'/g, "\""));
-        console.log(typeof(appdetail),appdetail);
-        console.log(appdetail.appName);
-        
         document.getElementById('Home').style.display = 'none';
-        s = `<div class="row details rounded border">
+        s = `<div class="row details rounded border" style="height:unset">
                 <div class="col-md-2 imgHeight">
                     <img src="/media/${appdetail.icons}" alt="${appdetail.appName}">
                 </div>
                 <div class="col-md-6">
                     <p><span style="font-size: 35px;">${appdetail.appName}</span>
                         <br>
-                    <a href="#tasks">View in Detail></a></p>
+                    <a href="${appdetail.appLink}">${appdetail.appLink}</a></p>
                 </div>
                 <div class="col-md-4">
                     <span class="border rounded bg-success right" >${appdetail.points} Points</span>
                 </div>
                 <div class='row'>
-                       
+                    <form id="screenshotForm" action="saveScreenshot" method="POST" onsubmit="saveScreenshot()">
+                        {% csrf_token %}
+                        <div id="dropArea" ondragover="allowDrop(event)" ondrop="handleDrop(event)" style="background-color:white;" onclick="handleDropAreaClick()">
+                            <p>Drap and drop screenshot here or click to select image.</p>
+                            <input type="file" id="screenshot" name="screenshot" accept=".jpg, .jpeg, .png" style="display: none;"
+                                onchange="handleFileSelect(event)">
+                        </div>
+                        <input type='submit' class='btn btn-danger' value='Save'>
+                    </form>
                 </div>
             </div>`
         tasks = document.getElementById('tasks');
+        tasks.innerHTML = '';
         tasks.style.display = 'block';
-        tasks.innerHTML +=s;
+        tasks.innerHTML += s;
     }
 </script>
 {% endblock %}

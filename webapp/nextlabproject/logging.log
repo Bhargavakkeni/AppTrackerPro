@@ -843,3 +843,7 @@ tz
 2023-12-27 23:18:11,799-[WARNING] [Thread-34 (process_request_thread)] (log):241 Not Found: /media/undefined
 2023-12-27 23:19:00,246-[WARNING] [Thread-34 (process_request_thread)] (log):241 Not Found: /media/undefined
 2023-12-27 23:21:13,724-[WARNING] [Thread-34 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 23:32:29,935-[WARNING] [Thread-47 (process_request_thread)] (log):241 Not Found: /media/${appdetail.icons}
+2023-12-27 23:32:31,998-[WARNING] [Thread-47 (process_request_thread)] (log):241 Not Found: /media/${appdetail.icons}
+2023-12-27 23:32:49,667-[WARNING] [Thread-47 (process_request_thread)] (log):241 Not Found: /media/${appdetail.icons}
+2023-12-27 23:32:50,820-[WARNING] [Thread-47 (process_request_thread)] (log):241 Not Found: /media/${appdetail.icons}
