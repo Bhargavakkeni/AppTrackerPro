@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import LoginDetails
-from .forms import LoginForm
-from .serializers import LoginSerializer
+from .models import LoginDetails, AppDetails
+from .serializers import LoginSerializer, AppDetailsSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -61,8 +60,27 @@ def app(request, *args, **kwargs):
     if username == 'admin':
         return render(request,'admin.html',context=mydict)
     else:
+        appDetails = AppDetails.objects.all().values()
+        mydict['appDetails'] = appDetails
         return render(request,'user.html',context=mydict)
     
+@api_view(['GET', 'POST', 'PUT', 'DELETE'])
+def addApps(request, *args, **kwargs):
+    if request.method == 'POST':
+        logging.info(f'Recieved app data {request.data}')
+        try:
+            serializer = AppDetailsSerializer(data=request.data)
+        except Exception as e:
+            logging.debug('Error occured while serializing the data {e}'.format(e))
+            return render(request, 'admin.html',{'error':False})
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return render(request, 'admin.html',{'verify':True})
+        else:
+            logging.debug('Error occured while saving the data {e}'.format(e))
+            return render(request, 'admin.html',{'error':False})
+
+
 
 '''
 def register(request):

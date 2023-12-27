@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block title %}Admin{% endblock %}
 {% block style %}
 <style>
@@ -67,6 +69,36 @@
     #profile {
         display: none;
     }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .details {
+        margin: 28px auto;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 12px;
+        background-color: lightgrey;
+    }
+
+    .imgHeight {
+        height: -webkit-fill-available;
+    }
+
+    span.right{
+        float: right;
+        width: 50%;
+        padding: 8px;
+        text-align: center;
+    }
+
+    #tasks{
+        display: none;
+    }
 </style>
 {% endblock %}
 {% block body %}
@@ -74,21 +106,76 @@
     <div class="row">
         <h2>Hello {{username}}</h2>
     </div>
-    <div class="row">
+    <div class="row" style="margin-top: 20px;">
         <div class="col-md-2">
             <ul>
                 <li>
-                    <a href="#profile" class="btn btn-info" onclick="show()">Home</a>
+                    <a href="#Home" class="btn btn-info">Home</a>
                 </li>
                 <li>
-                    <a href="#addApp" class="btn btn-primary" onclick="reset()">Add Apps</a>
+                    <a href="#profile" class="btn btn-primary">Profile</a>
+                </li>
+                <li>
+                    <a href="#points" class="btn btn-success">Points</a>
+                </li>
+                <li>
+                    <a href="#tasks" class="btn btn-warning">Task</a>
                 </li>
                 <li>
                     <a href="/home" class="btn btn-danger">Logout</a>
                 </li>
+
             </ul>
         </div>
-        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="addApp"></div>
+        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="Home">
+            {% for appdetail in appDetails %}
+            <div class="row details rounded border" onclick="form(event,`{{appdetail|escapejs|safe}}`)">
+                <div class="col-md-2 imgHeight">
+                    <img src="/media/{{ appdetail.icons }}" alt="{{appdetail.appName}}">
+                </div>
+                <div class="col-md-6">
+                    <p><span style="font-size: 35px;">{{appdetail.appName}}</span>
+                        <br>
+                    <a href="#tasks">View in Detail></a></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="border rounded bg-success right" >{{appdetail.points}} Points</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="tasks">
+        </div>
     </div>
 </div>
+<script>
+    function form(event,appdetail){
+        event.preventDefault();
+        console.log(typeof(appdetail),appdetail.toString());
+        var appdetail = JSON.parse(appdetail.replace(/'/g, "\""));
+        console.log(typeof(appdetail),appdetail);
+        console.log(appdetail.appName);
+        
+        document.getElementById('Home').style.display = 'none';
+        s = `<div class="row details rounded border">
+                <div class="col-md-2 imgHeight">
+                    <img src="/media/${appdetail.icons}" alt="${appdetail.appName}">
+                </div>
+                <div class="col-md-6">
+                    <p><span style="font-size: 35px;">${appdetail.appName}</span>
+                        <br>
+                    <a href="#tasks">View in Detail></a></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="border rounded bg-success right" >${appdetail.points} Points</span>
+                </div>
+                <div class='row'>
+                       
+                </div>
+            </div>`
+        tasks = document.getElementById('tasks');
+        tasks.style.display = 'block';
+        tasks.innerHTML +=s;
+    }
+</script>
 {% endblock %}

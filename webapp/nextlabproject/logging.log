@@ -293,3 +293,553 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 24: 'e
 2023-12-27 12:01:59,926-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
 2023-12-27 12:02:19,399-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/lsignOn
 2023-12-27 12:02:37,670-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/lsignOn
+2023-12-27 12:03:37,775-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-27 12:04:03,537-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-27 12:07:11,526-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2023-12-27 12:07:19,600-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2023-12-27 12:07:25,334-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2023-12-27 12:39:26,710-[WARNING] [Thread-6 (process_request_thread)] (log):241 Forbidden (CSRF token missing.): /home/app/add_apps
+2023-12-27 12:40:13,520-[WARNING] [Thread-9 (process_request_thread)] (log):241 Forbidden (CSRF token missing.): /home/app/add_apps
+2023-12-27 12:40:50,239-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 12:40:55,382-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 12:42:37,880-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 12:45:19,009-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/add_apps
+2023-12-27 12:46:00,460-[WARNING] [Thread-1 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 12:49:34,443-[WARNING] [Thread-3 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 12:54:30,051-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\serializers.py changed, reloading.
+2023-12-27 12:55:57,853-[WARNING] [Thread-1 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 13:04:16,644-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 13:04:25,387-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 13:04:32,638-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 13:04:36,505-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 13:05:04,287-[INFO] [Thread-1 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['dn08dLOGm7Cw4KwS8St3TD94jE3zKE0Fsv8yg5omKYFS4uNMz29puOhBAcvURiZz'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 13:05:04,418-[WARNING] [Thread-1 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 13:11:10,780-[INFO] [Thread-3 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['qt9Kf0RvsCkdEgfXFJwYETpI341MKlZhFBhaikrbQtnzE0wR6Tckf4xfkCt7RZYb'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 13:11:10,782-[WARNING] [Thread-3 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:00:23,845-[INFO] [Thread-12 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['Z9PCtPOk5YvZf5qpfx9GJAwSLLtXWlH3ehX2w9o0tPylfPHjGHP2kLEp2jVi3ZGX'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 14:00:23,845-[WARNING] [Thread-12 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:01:39,679-[INFO] [Thread-12 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['6hgk8wtPwvMZlOaJpk2YUdA52XLCs1DOlpoKbQ3vUmPllyrDQuIkvoICjvdXzFCI'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 14:01:39,680-[WARNING] [Thread-12 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:02:44,342-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-27 14:02:53,996-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-27 14:02:57,547-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-27 14:03:05,155-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-27 14:03:21,287-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-27 14:03:39,470-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\serializers.py changed, reloading.
+2023-12-27 14:03:42,957-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\serializers.py changed, reloading.
+2023-12-27 14:06:29,315-[INFO] [Thread-1 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['DbCGuNqhKZEcZ6pCK9qx5YcE7kO6hYUeSjK6x70X8QHyZQGwbj6TG9kboSgroCT8'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 14:06:29,349-[WARNING] [Thread-1 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:16:29,588-[INFO] [Thread-4 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['pTvJAuCbafYLVLH1uTlh4yzdN7QTtq8UE1D9DOcRy617VvYVV31DFJHK4FieA47O'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 14:16:29,590-[WARNING] [Thread-4 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:18:27,879-[INFO] [Thread-8 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['Zf4kzjmLyyPmRW8OFBlFhoFM6qimBIWXencKCDWrWpSIRGpI6L11SzNjnYKHImVR'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 14:18:27,880-[WARNING] [Thread-8 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:23:57,244-[INFO] [Thread-10 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['5uQ0JHyDa6xGUbhWnm1oQtutHuUekYHLkCYqM18jyXA2UVyQOwHKrEC0Y2mzrCGF'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50']}>
+2023-12-27 14:23:57,245-[WARNING] [Thread-10 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:25:53,917-[INFO] [Thread-10 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['hptGhlhfzAl4ahCMFLKR6nTsGB6B7DobwxB6kFRVXroqa1TG6VqdHy1ZX9yWehn5'], 'icons': ['', <InMemoryUploadedFile: facebook.jpeg (image/jpeg)>], 'appName': [''], 'appLink': [''], 'category': [''], 'subCategory': [''], 'points': ['']}>
+2023-12-27 14:25:54,109-[WARNING] [Thread-10 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:29:33,506-[INFO] [Thread-14 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['ksg8oUTr2WOLaALpQfJySYkfXYyGdqg2zAoyret7qNR7ak2jhppUt9sMew01k4fW'], 'appName': [''], 'appLink': [''], 'category': [''], 'subCategory': [''], 'points': [''], 'icons': [<InMemoryUploadedFile: facebook.jpeg (image/jpeg)>]}>
+2023-12-27 14:29:33,508-[WARNING] [Thread-14 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:51:04,965-[INFO] [Thread-25 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['ekg3EL7pCf7Dn9AN6fON5BvpYS5BMr4EtsotH5H506aZnTRHxpu9GMDWfqxWT53y'], 'icons': ['', <InMemoryUploadedFile: facebook.jpeg (image/jpeg)>], 'appName': ['', '[object HTMLInputElement]'], 'appLink': ['', '[object HTMLInputElement]'], 'category': ['', '[object HTMLInputElement]'], 'subCategory': ['', '[object HTMLInputElement]'], 'points': ['']}>
+2023-12-27 14:51:04,968-[WARNING] [Thread-25 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:54:10,730-[INFO] [Thread-25 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['rZcc10D9kOuYkJXk7VsRZ46K61G9orWrG7kC4kdPIFxkkteey58dAfehnz8uv5Vl'], 'icons': ['', <InMemoryUploadedFile: facebook.jpeg (image/jpeg)>], 'appName': ['', 'Facebook'], 'appLink': ['', 'https://www.facebook.com/android_upgrade/'], 'category': ['', 'Entertainment'], 'subCategory': ['', 'social media'], 'points': ['']}>
+2023-12-27 14:54:10,732-[WARNING] [Thread-25 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 14:55:21,444-[INFO] [Thread-25 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['fUxtnIyh2NywfWqFcvjVxPTtat2oZO1Iu2FTq28XqEBSfGHzDFZh8010r1uJ6s0C'], 'icons': ['', <InMemoryUploadedFile: facebook.jpeg (image/jpeg)>], 'appName': ['', 'Facebook'], 'appLink': ['', 'https://www.facebook.com/android_upgrade/'], 'category': ['', 'Entertainment'], 'subCategory': ['', 'social media'], 'points': ['', '50']}>
+2023-12-27 14:59:04,076-[INFO] [Thread-25 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['azLX6KDEfh08WAIJiu0TTxjpJwWAASK4pHTn94dkD83uWkZDJEGfuIrW04oVHwJY'], 'icons': [''], 'appName': ['', 'Facebook'], 'appLink': ['', 'https://www.facebook.com/android_upgrade/'], 'category': ['', 'Entertainment'], 'subCategory': ['', 'social media'], 'points': ['', '50']}>
+2023-12-27 14:59:04,077-[WARNING] [Thread-25 (process_request_thread)] (log):241 Bad Request: /home/addApps
+2023-12-27 15:16:14,535-[INFO] [Thread-35 (process_request_thread)] (views):68 Recieved app data <QueryDict: {'csrfmiddlewaretoken': ['HfVjpyEyGdkwuPcbgakxsmmrPYjO88GWWn3JsSee44nSuzt5Hk0T3xuY6wL9fMFQ'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50'], 'icons': [<InMemoryUploadedFile: facebook.jpeg (image/jpeg)>]}>
+2023-12-27 15:21:32,919-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 15:21:47,311-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 15:22:09,933-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 15:22:14,476-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-27 15:30:01,926-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:30:01,929-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:31:04,493-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:31:04,495-[WARNING] [Thread-4 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook.jpeg
+2023-12-27 15:31:30,011-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 15:31:32,431-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 15:31:35,081-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 15:31:55,215-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 15:31:57,880-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook.jpeg
+2023-12-27 15:31:57,881-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:31:58,568-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook.jpeg
+2023-12-27 15:31:58,571-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:32:08,421-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\urls.py changed, reloading.
+2023-12-27 15:32:11,810-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\urls.py changed, reloading.
+2023-12-27 15:32:17,344-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook.jpeg
+2023-12-27 15:32:17,347-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:32:18,410-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook.jpeg
+2023-12-27 15:32:18,412-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:32:46,539-[WARNING] [Thread-4 (process_request_thread)] (log):241 Not Found: /media/images/facebook.jpeg
+2023-12-27 15:32:46,540-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:32:58,238-[WARNING] [Thread-8 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:32:58,241-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook.jpeg
+2023-12-27 15:33:23,938-[WARNING] [Thread-11 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:33:23,939-[WARNING] [Thread-10 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:36:10,020-[WARNING] [Thread-16 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:36:10,023-[WARNING] [Thread-17 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:36:14,298-[WARNING] [Thread-17 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:36:14,300-[WARNING] [Thread-16 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:40:35,503-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\urls.py changed, reloading.
+2023-12-27 15:42:00,093-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin1
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 65, in app
+    return render(request,'user.html',context=mydict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 103: 'media', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2023-12-27 15:43:58,181-[ERROR] [Thread-4 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin1
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'appdetail.icons.url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 65, in app
+    return render(request,'user.html',context=mydict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 103: 'appdetail.icons.url', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2023-12-27 15:44:16,061-[ERROR] [Thread-10 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin1
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'appdetail.icons.url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 65, in app
+    return render(request,'user.html',context=mydict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 103: 'appdetail.icons.url', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2023-12-27 15:44:41,594-[ERROR] [Thread-13 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin1
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 65, in app
+    return render(request,'user.html',context=mydict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 511, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 528, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "base.html"> must be the first tag in the template.
+2023-12-27 15:45:55,260-[WARNING] [Thread-20 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:45:55,263-[WARNING] [Thread-19 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:46:20,123-[WARNING] [Thread-22 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook.jpeg
+2023-12-27 15:46:20,125-[WARNING] [Thread-23 (process_request_thread)] (log):241 Not Found: /home/app/media/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:47:35,069-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\urls.py changed, reloading.
+2023-12-27 15:50:08,190-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:50:08,192-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:54:46,516-[WARNING] [Thread-21 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 15:54:46,519-[WARNING] [Thread-20 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:56:50,352-[ERROR] [Thread-29 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin1
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 1033, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 65, in app
+    return render(request,'user.html',context=mydict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 1095, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 1035, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+rest_framework
+static
+tz
+2023-12-27 15:57:32,390-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 15:57:41,183-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 15:57:45,720-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-27 15:58:21,895-[WARNING] [Thread-4 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook.jpeg
+2023-12-27 15:58:21,898-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /home/app/images/facebook_ZFNdqty.jpeg
+2023-12-27 21:32:49,774-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /favicon.ico
+2023-12-27 22:24:19,919-[WARNING] [Thread-14 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:25:06,311-[WARNING] [Thread-14 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:26:08,914-[WARNING] [Thread-14 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:31:17,067-[WARNING] [Thread-20 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:31:58,324-[WARNING] [Thread-20 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:33:40,151-[WARNING] [Thread-20 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:36:58,094-[WARNING] [Thread-20 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:37:36,741-[WARNING] [Thread-20 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 22:46:07,203-[ERROR] [Thread-25 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin1
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 1033, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'json_script'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 65, in app
+    return render(request,'user.html',context=mydict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 1095, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\template\defaulttags.py", line 1035, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'json_script' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+rest_framework
+static
+tz
+2023-12-27 23:17:31,023-[WARNING] [Thread-34 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 23:18:11,799-[WARNING] [Thread-34 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 23:19:00,246-[WARNING] [Thread-34 (process_request_thread)] (log):241 Not Found: /media/undefined
+2023-12-27 23:21:13,724-[WARNING] [Thread-34 (process_request_thread)] (log):241 Not Found: /media/undefined

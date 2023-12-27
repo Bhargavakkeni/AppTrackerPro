@@ -62,6 +62,10 @@
     #profile{
         display: none;
     }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
 </style>
 {% endblock %}
 {% block body %}
@@ -69,7 +73,7 @@
     <div class="row">
         <h2>Hello {{username}}</h2>
     </div>
-    <div class="row">
+    <div class="row" style="margin-top: 20px;">
         <div class="col-md-2">
             <ul>
                 <li>
@@ -87,11 +91,11 @@
             <p>Total apps added:</p>
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="addApp">
-            <form method="POST" id="addForm" action="add_apps" enctype="multipart/form-data">
+            <form method="POST" id="addForm" action="../addApps" enctype="multipart/form-data" onsubmit="submitForm(event)">
+                {% csrf_token %}
                 <div id="dropArea" ondragover="allowDrop(event)" ondrop="handleDrop(event)">
                     <p>Drap and drop app icon here or click to select app icon.</p>
-                    <input type="file" id="appPic" name="appPic" accept=".jpg, .jpeg, .png" style="display: none;"
-                        onchange="handleFileSelect(event)">
+                    <input type="file" id="icons" name="icons" accept=".jpg, .jpeg, .png" style="display: none;" onchange="handleFileSelect(event)">
                 </div>
                 <div class="col">
                     <table>
@@ -102,7 +106,7 @@
                                     placeholder="App Link" required></td>
                         </tr>
                         <tr>
-                            <td><input type="text" list="options" class="form-control" id="categoryInput"
+                            <td><input type="text" list="options" class="form-control" id="category"
                                     name="category" placeholder="select a category">
                                 <datalist id="options">
                                     <option value="Entertainment"></option>
@@ -132,6 +136,24 @@
     </div>
 </div>
 <script>
+    var formData = new FormData(document.getElementById('addForm'));
+    
+    function submitForm(event){
+        event.preventDefault();
+       
+        formData.set('appName',document.getElementById('appName').value);
+        formData.set('appLink',document.getElementById('appLink').value);
+        formData.set('category',document.getElementById('category').value);
+        formData.set('subCategory',document.getElementById('subCategory').value);
+        formData.set('points',document.getElementById('points').value);
+        
+        console.log('formData',formData);
+        fetch('../addApps',{
+            method: 'POST',
+            body: formData,
+        }).catch(error => console.error('Error',error));
+    }
+
     function show(){
         document.getElementById('profile').style.display = 'block';
         document.getElementById('addApp').style.display = 'none';
@@ -144,7 +166,7 @@
     }
 
     function subCategory() {
-        var subcategory = document.getElementById('categoryInput').value;
+        var subcategory = document.getElementById('category').value;
         console.log('subCategory', subcategory);
         var opt = document.getElementById('suboptions');
         opt.innerHTML = '';
@@ -169,7 +191,7 @@
 
     }
 
-    document.getElementById('categoryInput').addEventListener('change', subCategory);
+    document.getElementById('category').addEventListener('change', subCategory);
 
     function allowDrop(event) {
         event.preventDefault();
@@ -192,6 +214,7 @@
     }
 
     function handleFiles(files) {
+        console.log('handleFiles called');
         var dropArea = document.getElementById('dropArea');
         dropArea.innerHTML = '';
 
@@ -200,12 +223,12 @@
             if (file.type.match('image/jpeg') || file.type.match('image/png')) {
                 var reader = new FileReader();
                 reader.onload = function (e) {
-                    var img = new Image()
+                    var img = new Image();
                     img.src = e.target.result;
-                    img.style.width = '100%';
+                    img.id = 'icons';
                     dropArea.appendChild(img);
                 };
-
+                formData.set('icons',file,file.name);
                 reader.readAsDataURL(file);
             } else {
                 alert('Please upload only .jpg, .jpeg or .png files.');
@@ -214,7 +237,7 @@
     }
 
     document.getElementById('dropArea').addEventListener('click', function () {
-        document.getElementById('appPic').click();
+        document.getElementById('icons').click();
     })
 </script>
 {% endblock %}
