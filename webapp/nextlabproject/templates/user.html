@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block style %}
+<style>
+    h2 {
+        text-align: center;
+        background-color: whitesmoke;
+    }
+
+    body {
+        background-color: gainsboro;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 10px;
+        padding: 2px;
+    }
+
+    li a {
+        width: 80%;
+    }
+
+    #dropArea {
+        width: 300px;
+        height: 200px;
+        border: 2px dashed #ccc;
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    td {
+        padding: 21px;
+    }
+
+    .center {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-size: large;
+    }
+
+    #profile {
+        display: none;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <h2>Hello {{username}}</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <ul>
+                <li>
+                    <a href="#profile" class="btn btn-info" onclick="show()">Home</a>
+                </li>
+                <li>
+                    <a href="#addApp" class="btn btn-primary" onclick="reset()">Add Apps</a>
+                </li>
+                <li>
+                    <a href="/home" class="btn btn-danger">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="addApp"></div>
+    </div>
+</div>
+{% endblock %}
