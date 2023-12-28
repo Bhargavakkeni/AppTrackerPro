@@ -37,7 +37,7 @@
         border-radius: 8px;
         text-align: center;
         padding: 20px;
-        margin: 20px auto;
+        margin: auto;
         cursor: pointer;
     }
 
@@ -80,6 +80,7 @@
         height: 15%;
         display: flex;
         flex-direction: row;
+        align-items: center;
         padding: 11px;
         background-color: lightgrey;
     }
@@ -110,6 +111,21 @@
     #profile {
         display: none;
     }
+
+    #Home:hover {
+        cursor: pointer;
+    }
+
+    #save {
+        margin: 20px auto 0;
+        width: 50%;
+        display: block;
+    }
+
+    span.styling {
+        font-size: xx-large;
+        color: darkred;
+    }
 </style>
 {% endblock %}
 {% block body %}
@@ -138,7 +154,7 @@
 
             </ul>
         </div>
-        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="Home">
+        <div class="col-md-8" style="background-color: whitesmoke; height: 583px; overflow: auto;" id="Home">
             {% for appdetail in appDetails %}
             <div class="row details rounded border" onclick="generateDetails(event,`{{appdetail|escapejs|safe}}`)">
                 <div class="col-md-2 imgHeight">
@@ -164,26 +180,41 @@
             </div>
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="tasksCompleted">
-            <div class="row">
+            <div class="row" style="display: block;">
                 <div class="col">
-                    <p>Tasks completed <span>{{results.tasksCompleted}}</span></p>
+                    <img src="/static/tasks.jpeg" alt="tasks image" id="tasksImage" class="form-control center"
+                    style="width: unset; margin: 75px auto 35px;"> 
+                </div>
+                <div class="col" style="text-align: center;
+                font-size: larger;">
+                    <p>Tasks completed: <span class="styling">{{results.tasksCompleted}}</span></p>
                 </div>
             </div>
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="pointsEarned">
-            <div class="row">
+            <div class="row" style="display: block;">
                 <div class="col">
-                    <p>Total Points earned <span>{{results.totalPoints}}</span></p>
+                    <img src="/static/points.jpeg" alt="points image" id="pointsImage" class="form-control center"
+                        style="width: unset; margin: 75px auto 35px;">
+                </div>
+                <div class="col" style="text-align: center;
+                font-size: larger;">
+                    <p>Total points earned: <span class="styling">{{results.totalPoints}}</span></p>
                 </div>
             </div>
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="profile">
-            <div class="row">
-                <div class="col">
-                    <p>Name {{username}}</p>
-                    <p> Tasks completed <span>{{results.tasksCompleted}}</span></p>
-                    <p>Remaining Tasks <span>{{remainingTasks}}</span></p>
-                    <p>Total Points earned <span>{{results.totalPoints}}</span></p>
+            <div class="row" style="display: block;">
+                <div class="col center">
+                    <img src="/static/profilePic.jpeg" id="profilePic" class="form-control" alt="profile pic"
+                        style="width: unset; margin: 10px auto;">
+                </div>
+                <div class="col"
+                    style=" display: flex; flex-direction: row; margin: 51px auto; justify-content: space-evenly; font-size: larger;">
+                    <p>Name: <span class="styling">{{username}}</span></p>
+                    <p> Tasks completed: <span class="styling">{{results.tasksCompleted}}</span></p>
+                    <p>Remaining tasks: <span class="styling">{{remainingTasks}}</span></p>
+                    <p>Total points earned: <span class="styling">{{results.totalPoints}}</span></p>
                 </div>
             </div>
         </div>
@@ -294,22 +325,25 @@
         document.getElementById('tasksCompleted').style.display = 'none';
         document.getElementById('Home').style.display = 'none';
         document.getElementById('pointsEarned').style.display = 'none';
-        s = `<div class="row details rounded border" style="height:unset">
-                <div class="col-md-2 imgHeight">
-                    <img src="/media/${appdetail.icons}" alt="${appdetail.appName}">
-                </div>
-                <div class="col-md-6">
-                    <p><span style="font-size: 35px;">${appdetail.appName}</span>
-                        <br>
-                    <a href="${appdetail.appLink}">${appdetail.appLink}</a></p>
-                </div>
-                <div class="col-md-4">
-                    <span class="border rounded bg-success right" >${appdetail.points} Points</span>
+        s = `<div class="row" style="margin: 0;">
+                <div class="row details rounded border" style="height:unset">
+                    <div class="col-md-2 imgHeight">
+                        <img src="/media/${appdetail.icons}" alt="${appdetail.appName}">
+                    </div>
+                    <div class="col-md-6">
+                        <p><span style="font-size: 35px;">${appdetail.appName}</span>
+                            <br>
+                        <a href="${appdetail.appLink}">${appdetail.appLink}</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="border rounded bg-success right" >${appdetail.points} Points</span>
+                    </div>
                 </div>
                 <div class='row'>
                     <form id="screenshotForm" action="../saveTasks" method="POST" onsubmit="submitForm(event)">
                         {% csrf_token %}
-                        <div id="dropArea" ondragover="allowDrop(event)" ondrop="handleDrop(event)" style="background-color:white;" onclick="handleDropAreaClick()">
+                        <div id="dropArea" ondragover="allowDrop(event)" ondrop="handleDrop(event)" 
+                        style="background-color:white;" onclick="handleDropAreaClick()">
                             <p>Drap and drop screenshot here or click to select image.</p>
                             <input type="file" id="screenShot" name="screenShot" accept=".jpg, .jpeg, .png" style="display: none;"
                                 onchange="handleFileSelect(event)">
@@ -317,7 +351,7 @@
                         <input type='text' name='username' value={{username}} id='username' style='display:none;' readonly >
                         <input type='number' name='tasksId' value=${appdetail.id} id='tasksId' style='display:none;' readonly>
                         <input type='number' name='points' value=${appdetail.points} id='points' style='display:none;' readonly>
-                        <input type='submit' class='btn btn-danger' value='Save'>
+                        <input type='submit' class='btn btn-danger' value='Save' id='save'>
                     </form>
                 </div>
             </div>`

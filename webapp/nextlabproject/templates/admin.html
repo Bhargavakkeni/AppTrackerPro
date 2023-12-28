@@ -23,8 +23,8 @@
         margin: 10px;
         padding: 2px;
     }
-    
-    li a{
+
+    li a {
         width: 80%;
     }
 
@@ -39,32 +39,64 @@
         cursor: pointer;
     }
 
-    table{
+    table {
         border-collapse: collapse;
         margin: 50px auto;
         width: 80%;
     }
-    input{
+
+    input {
         width: 80%;
     }
-    tr{
+
+    tr {
         margin-bottom: 10px;
     }
-    td{
+
+    td {
         padding: 21px;
     }
-    .center{
+
+    .center {
         margin: auto;
         width: 50%;
         text-align: center;
-    font-size: large;
+        font-size: large;
     }
-    #profile{
+
+    #home {
+        display: block;
+        background-color: whitesmoke; 
+        height: 583px;
+        overflow: auto;
+    }
+
+    #addApp{
         display: none;
     }
-    img{
+    img {
         max-width: 100%;
         max-height: 100%;
+    }
+
+    .details {
+        margin: 28px auto;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        padding: 11px;
+        background-color: lightgrey;
+    }
+
+    .imgHeight {
+        height: -webkit-fill-available;
+    }
+
+    span.right {
+        float: right;
+        width: 50%;
+        padding: 8px;
+        text-align: center;
     }
 </style>
 {% endblock %}
@@ -77,7 +109,7 @@
         <div class="col-md-2">
             <ul>
                 <li>
-                    <a href="#profile" class="btn btn-info" onclick="show()">Home</a>
+                    <a href="#home" class="btn btn-info" onclick="handleHome()">Home</a>
                 </li>
                 <li>
                     <a href="#addApp" class="btn btn-primary" onclick="reset()">Add Apps</a>
@@ -87,15 +119,37 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="profile">
-            <p>Total apps added:</p>
+
+        <div class="col-md-8"  id="home">
+            <div class="row" style="color: cadetblue; text-align: center; font-size: xx-large;">
+                <p style="margin: 0;">Added Apps</p>
+            </div>
+            {% for appdetail in appDetails %}
+            <div class="row details rounded border">
+                <div class="col-md-2 imgHeight">
+                    <img src="/media/{{ appdetail.icons }}" alt="{{appdetail.appName}}">
+                </div>
+                <div class="col-md-6">
+                    <p style="margin: 0;"><span style="font-size: 25px;">{{appdetail.appName}}</span>
+                        <br>
+                        <a href="{{appdetail.appLink}}" style="font-size: small;">{{appdetail.appLink}}</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="border rounded bg-success right">{{appdetail.points}} Points</span>
+                </div>
+            </div>
+            {% endfor %}
         </div>
+
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="addApp">
-            <form method="POST" id="addForm" action="../addApps" enctype="multipart/form-data" onsubmit="submitForm(event)">
+            <form method="POST" id="addForm" action="../addApps" enctype="multipart/form-data"
+                onsubmit="submitForm(event)">
                 {% csrf_token %}
                 <div id="dropArea" ondragover="allowDrop(event)" ondrop="handleDrop(event)">
                     <p>Drap and drop app icon here or click to select app icon.</p>
-                    <input type="file" id="icons" name="icons" accept=".jpg, .jpeg, .png" style="display: none;" onchange="handleFileSelect(event)">
+                    <input type="file" id="icons" name="icons" accept=".jpg, .jpeg, .png" style="display: none;"
+                        onchange="handleFileSelect(event)">
                 </div>
                 <div class="col">
                     <table>
@@ -106,8 +160,8 @@
                                     placeholder="App Link" required></td>
                         </tr>
                         <tr>
-                            <td><input type="text" list="options" class="form-control" id="category"
-                                    name="category" placeholder="select a category">
+                            <td><input type="text" list="options" class="form-control" id="category" name="category"
+                                    placeholder="select a category" required>
                                 <datalist id="options">
                                     <option value="Entertainment"></option>
                                     <option value="Arts & Design"></option>
@@ -117,17 +171,19 @@
                                 </datalist>
                             </td>
                             <td><input type="text" list="suboptions" class="form-control" id="subCategory"
-                                    name="subCategory" placeholder="select a sub category">
+                                    name="subCategory" placeholder="select a sub category" required>
                                 <datalist id="suboptions">
                                     <option value=""></option>
                                 </datalist>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="number" id="points" name="points" class="form-control center bg-success" placeholder="Add Points" required></td>
+                            <td colspan="2"><input type="number" id="points" name="points"
+                                    class="form-control center bg-success" placeholder="Add Points" required></td>
                         </tr>
-                        <tr >
-                           <td colspan="2" > <input type="submit" id="submit" class="form-control bg-warning center"></td>
+                        <tr>
+                            <td colspan="2"> <input type="submit" id="submit" class="form-control bg-warning center">
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -137,29 +193,29 @@
 </div>
 <script>
     var formData = new FormData(document.getElementById('addForm'));
-    
-    function submitForm(event){
+
+    function submitForm(event) {
         event.preventDefault();
-       
-        formData.set('appName',document.getElementById('appName').value);
-        formData.set('appLink',document.getElementById('appLink').value);
-        formData.set('category',document.getElementById('category').value);
-        formData.set('subCategory',document.getElementById('subCategory').value);
-        formData.set('points',document.getElementById('points').value);
-        
-        console.log('formData',formData);
-        fetch('../addApps',{
+
+        formData.set('appName', document.getElementById('appName').value);
+        formData.set('appLink', document.getElementById('appLink').value);
+        formData.set('category', document.getElementById('category').value);
+        formData.set('subCategory', document.getElementById('subCategory').value);
+        formData.set('points', document.getElementById('points').value);
+
+        console.log('formData', formData);
+        fetch('../addApps', {
             method: 'POST',
             body: formData,
-        }).catch(error => console.error('Error',error));
+        }).catch(error => console.error('Error', error));
     }
 
-    function show(){
-        document.getElementById('profile').style.display = 'block';
+    function handleHome() {
+        document.getElementById('home').style.display = 'block';
         document.getElementById('addApp').style.display = 'none';
     }
-    function reset(){
-        document.getElementById('profile').style.display = 'none';
+    function reset() {
+        document.getElementById('home').style.display = 'none';
         document.getElementById('addApp').style.display = 'block';
         form = document.getElementById('addForm');
         form.reset();
@@ -228,7 +284,7 @@
                     img.id = 'icons';
                     dropArea.appendChild(img);
                 };
-                formData.set('icons',file,file.name);
+                formData.set('icons', file, file.name);
                 reader.readAsDataURL(file);
             } else {
                 alert('Please upload only .jpg, .jpeg or .png files.');
