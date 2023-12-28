@@ -1100,3 +1100,153 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 2023-12-28 13:11:15,334-[INFO] [Thread-14 (process_request_thread)] (views):86 Recieved app data in addApps post method <QueryDict: {'csrfmiddlewaretoken': ['OQnrSizk2lh5eUadZfQxBfwgH1GFK9Wy3YvRVC90qckreEr7qpwTcqENYz80RNVs'], 'appName': ['Facebook'], 'appLink': ['https://www.facebook.com/android_upgrade/'], 'category': ['Entertainment'], 'subCategory': ['social media'], 'points': ['50'], 'icons': [<InMemoryUploadedFile: facebook.jpeg (image/jpeg)>]}>
 2023-12-28 15:09:36,795-[WARNING] [Thread-41 (process_request_thread)] (log):241 Not Found: /home/home/
 2023-12-28 22:11:44,279-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /favicon.ico
+2023-12-28 22:28:01,187-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2023-12-28 22:28:36,845-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:28:48,817-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:28:55,480-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:29:06,397-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:29:14,144-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:17,617-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:31,439-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:37,013-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:40,503-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:44,997-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:50,533-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:53,014-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:55,376-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:30:59,763-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:02,344-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:12,331-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:14,682-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:21,316-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:23,701-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:26,099-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:30,631-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:35,140-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:40,713-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:48,473-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:50,943-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:56,550-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:31:59,022-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:32:05,787-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:35:59,802-[WARNING] [Thread-1 (process_request_thread)] (log):241 Forbidden: /home/addApps/10
+2023-12-28 22:37:13,109-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:40:55,453-[WARNING] [Thread-1 (process_request_thread)] (log):241 Forbidden: /home/addApps/10
+2023-12-28 22:46:23,275-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:46:29,904-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:49:13,845-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:49:17,368-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:50:36,728-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:50:42,324-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:50:45,859-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:50:50,494-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:50:52,936-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:50:57,501-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:00,842-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:03,239-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:07,730-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:14,286-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:18,903-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:34,028-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:38,604-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:42,175-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:48,816-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:51,274-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:51:56,972-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:52:11,012-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:52:36,532-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:52:38,974-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:52:41,361-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:52:43,783-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:52:49,254-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:54:56,409-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 22:54:58,762-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:04:54,660-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:05:01,381-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:05:12,188-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:05:19,761-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:05:23,194-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:05:25,667-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:06:47,009-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:06:50,606-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:06:54,144-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:07:07,034-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:07:13,789-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:07:18,275-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:07:23,988-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:07:30,658-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:07:43,931-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:09:01,498-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:09:05,043-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:09:08,651-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:09:13,310-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:09:17,847-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:09:23,369-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:09:30,452-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:09:30,452-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [2]>
+2023-12-28 23:09:31,137-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:09:31,140-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [2]>
+2023-12-28 23:09:57,692-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:10:05,398-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:10:09,134-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:10:09,135-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [{'id': 1, 'username_id': 'admin1', 'tasksId': 2, 'points': 50, 'screenShot': 'screenshots/mysign.jpg'}]>
+2023-12-28 23:10:09,135-[INFO] [Thread-1 (process_request_thread)] (views):75 fetched list of tasksIds is <QuerySet [{'id': 1, 'username_id': 'admin1', 'tasksId': 2, 'points': 50, 'screenShot': 'screenshots/mysign.jpg'}]>
+2023-12-28 23:10:10,602-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:10:10,604-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [{'id': 1, 'username_id': 'admin1', 'tasksId': 2, 'points': 50, 'screenShot': 'screenshots/mysign.jpg'}]>
+2023-12-28 23:10:10,604-[INFO] [Thread-1 (process_request_thread)] (views):75 fetched list of tasksIds is <QuerySet [{'id': 1, 'username_id': 'admin1', 'tasksId': 2, 'points': 50, 'screenShot': 'screenshots/mysign.jpg'}]>
+2023-12-28 23:21:38,214-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:21:45,889-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:22:25,016-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:22:55,569-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:22:55,569-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [{'tasksId': 2}]>
+2023-12-28 23:22:55,569-[INFO] [Thread-1 (process_request_thread)] (views):75 fetched list of tasksIds is <QuerySet [{'tasksId': 2}]>
+2023-12-28 23:23:25,295-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:25:09,112-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:25:09,118-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [{'tasksId': 2}]>
+2023-12-28 23:25:09,118-[INFO] [Thread-1 (process_request_thread)] (views):75 fetched list of tasksIds is <QuerySet [{'tasksId': 2}]>
+2023-12-28 23:26:49,789-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:26:49,789-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:26:49,789-[INFO] [Thread-1 (process_request_thread)] (views):75 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:26:50,457-[INFO] [Thread-1 (process_request_thread)] (views):67 Username is not admin returning user page.
+2023-12-28 23:26:50,460-[INFO] [Thread-1 (process_request_thread)] (views):70 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:26:50,460-[INFO] [Thread-1 (process_request_thread)] (views):75 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:28:02,567-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:29:48,513-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:29:51,074-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:29:53,687-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:30:04,665-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:30:12,809-[INFO] [Thread-1 (process_request_thread)] (views):68 Username is not admin returning user page.
+2023-12-28 23:30:12,812-[INFO] [Thread-1 (process_request_thread)] (views):71 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:30:12,813-[INFO] [Thread-1 (process_request_thread)] (views):76 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:30:50,647-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:30:54,164-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:30:58,657-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:31:02,200-[INFO] [Thread-1 (process_request_thread)] (views):68 Username is not admin returning user page.
+2023-12-28 23:31:02,201-[INFO] [Thread-1 (process_request_thread)] (views):71 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:31:02,201-[INFO] [Thread-1 (process_request_thread)] (views):76 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:34:06,403-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:34:29,295-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:34:31,705-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:34:40,375-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:34:53,291-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:35:26,099-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:35:29,568-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:35:34,078-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:35:51,918-[INFO] [Thread-1 (process_request_thread)] (views):68 Username is not admin returning user page.
+2023-12-28 23:35:51,921-[INFO] [Thread-1 (process_request_thread)] (views):71 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:35:51,922-[INFO] [Thread-1 (process_request_thread)] (views):76 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:37:08,523-[INFO] [Thread-1 (process_request_thread)] (views):68 Username is not admin returning user page.
+2023-12-28 23:37:08,525-[INFO] [Thread-1 (process_request_thread)] (views):71 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:37:08,525-[INFO] [Thread-1 (process_request_thread)] (views):76 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:38:26,806-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:38:57,430-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:38:59,761-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:39:14,701-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:39:19,198-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:39:23,604-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-28 23:39:56,856-[INFO] [Thread-1 (process_request_thread)] (views):68 Username is not admin returning user page.
+2023-12-28 23:39:56,856-[INFO] [Thread-1 (process_request_thread)] (views):71 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:39:56,856-[INFO] [Thread-1 (process_request_thread)] (views):87 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:49:15,321-[INFO] [Thread-1 (process_request_thread)] (views):68 Username is not admin returning user page.
+2023-12-28 23:49:15,327-[INFO] [Thread-1 (process_request_thread)] (views):71 fetching tasks id list <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>
+2023-12-28 23:49:15,329-[INFO] [Thread-1 (process_request_thread)] (views):87 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}]>

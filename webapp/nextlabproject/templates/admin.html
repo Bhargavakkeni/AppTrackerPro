@@ -96,7 +96,12 @@
         float: right;
         width: 50%;
         padding: 8px;
+        margin: 10px;
         text-align: center;
+    }
+    #delete{
+        cursor: pointer;
+
     }
 </style>
 {% endblock %}
@@ -136,6 +141,11 @@
                     </p>
                 </div>
                 <div class="col-md-4">
+                    <span class="btn bg-danger right" style="width: 65px;">
+                        <a onclick="handleDelete(event,`{{appdetail.id}}`)" title="delete app details" id="delete">
+                        Delete
+                        </a>
+                    </span>
                     <span class="border rounded bg-success right">{{appdetail.points}} Points</span>
                 </div>
             </div>
@@ -193,6 +203,18 @@
 </div>
 <script>
     var formData = new FormData(document.getElementById('addForm'));
+
+    function handleDelete(event,id){
+        event.preventDefault();
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        fetch(`../addApps/${id}`,{
+            method:'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrftoken,
+            }
+        }).catch(error => console.log('Error',error));
+    }
 
     function submitForm(event) {
         event.preventDefault();

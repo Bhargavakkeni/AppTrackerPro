@@ -9,6 +9,7 @@ urlpatterns = [
     path('app/<str:username>',views.app,name='adminhome'),
     path('register',views.register,name='register'),
     path('addApps',views.addApps,name='addApps'),
+    path('addApps/<int:id>',views.addApps,name='deleteAppDetails'),
     path('saveTasks',views.saveTasks,name='saveTasks'),
 ]
 

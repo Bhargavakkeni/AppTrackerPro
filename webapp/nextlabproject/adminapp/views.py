@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.db import models
+
 from .models import LoginDetails, AppDetails, TaskDetails
 from .serializers import LoginSerializer, AppDetailsSerializer, TaskDetailsSerializer
 from rest_framework.decorators import api_view
@@ -59,10 +60,19 @@ def app(request, *args, **kwargs):
         'username': username,
     }
     appDetails = AppDetails.objects.all().values()
+    print('appDetails',type(appDetails))
     mydict['appDetails'] = appDetails
     if username == 'admin':
         return render(request,'admin.html',context=mydict)
     else:
+        logging.info('Username is not admin returning user page.')
+        try:
+            tasksIdList = TaskDetails.objects.filter(username = username).values('tasksId')
+            logging.info('fetching tasks id list {}'.format(tasksIdList))
+        except Exception as e:
+            logging.debug('Error occured while fetching tasks ids from tasksdetails table in app function {}'.format(e))
+            return render(request, 'user.html', {'error':True})
+        
         try:
             results = TaskDetails.objects.filter(username = username).aggregate(
                 totalPoints = models.Sum('points'),
@@ -71,17 +81,28 @@ def app(request, *args, **kwargs):
         except Exception as e:
             logging.debug('Error occured while fetching user task Details {}'.format(e))
             return render(request, 'user.html', {'error':True})
+        
         mydict['remainingTasks'] = len(appDetails) - results['tasksCompleted']
+        if tasksIdList:
+            logging.info('fetched list of tasksIds is {}'.format(tasksIdList))
+            appDetails = list(appDetails)
+            for i in tasksIdList:
+                for j in appDetails:
+                    if i['tasksId'] == j['id']:
+                        appDetails.remove(j)
+            mydict['appDetails'] = appDetails
         if results['totalPoints']:
             mydict['results'] = results
         else:
             results['totalPoints'] = 0
             mydict['results'] = results
-        print(results)
+        
         return render(request,'user.html',context=mydict)
     
+
+    
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
-def addApps(request, *args, **kwargs):
+def addApps(request,id='', *args, **kwargs):
     if request.method == 'POST':
         logging.info('Recieved app data in addApps post method {}'.format(request.data))
         try:
@@ -95,6 +116,16 @@ def addApps(request, *args, **kwargs):
         else:
             logging.debug('Error occured while saving the data {e}'.format(e))
             return render(request, 'admin.html',{'error':True})
+    elif request.method == 'DELETE':
+        try:
+            appdetails = AppDetails.objects.all().get(pk=id)
+        except Exception as e:
+            logging.debug('Error while fetching appDetails with id {} in addApps delete request method'.format(id))
+            return render(request, 'admin.html',{'error':True})
+        if appdetails:
+            appdetails.delete()
+            return render(request, 'admin.html',{'verify':True})
+
 
 @api_view(['GET', 'POST'])
 def saveTasks(request, *args, **kwargs):
@@ -110,22 +141,3 @@ def saveTasks(request, *args, **kwargs):
         else:
             logging.debug('Error while saving the data. Recieved data {}'.format(serializer.validated_data))
             return render(request, 'user.html', {'error':False})
-
-
-'''
-def register(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        mydict ={'error':False}
-        obj = LoginDetails(username=username, password=password)
-        if obj:
-            obj.save()
-            mydict['verify'] = True
-        else:
-            mydict['error'] = True
-        return render(request,'register.html',context=mydict)
-    else:
-        
-        return render(request, 'register.html')
-'''

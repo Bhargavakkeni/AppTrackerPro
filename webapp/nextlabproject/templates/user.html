@@ -156,7 +156,7 @@
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px; overflow: auto;" id="Home">
             {% for appdetail in appDetails %}
-            <div class="row details rounded border" onclick="generateDetails(event,`{{appdetail|escapejs|safe}}`)">
+            <div class="row details rounded border" onclick="generateDetails(event,`{{appdetail|escapejs|safe}}`,)">
                 <div class="col-md-2 imgHeight">
                     <img src="/media/{{ appdetail.icons }}" alt="{{appdetail.appName}}">
                 </div>
