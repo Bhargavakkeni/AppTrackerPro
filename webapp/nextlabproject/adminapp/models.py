@@ -13,3 +13,9 @@ class AppDetails(models.Model):
     category = models.CharField(max_length = 255)
     subCategory = models.CharField(max_length = 255)
     points = models.IntegerField()
+
+class TaskDetails(models.Model):
+    username = models.ForeignKey(LoginDetails, on_delete = models.CASCADE)
+    tasksId = models.IntegerField()
+    points = models.IntegerField()
+    screenShot = models.ImageField(upload_to='screenshots/')

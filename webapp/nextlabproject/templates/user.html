@@ -77,11 +77,10 @@
 
     .details {
         margin: 28px auto;
-        height: 20%;
+        height: 15%;
         display: flex;
-        align-items: center;
         flex-direction: row;
-        padding: 12px;
+        padding: 11px;
         background-color: lightgrey;
     }
 
@@ -99,6 +98,18 @@
     #tasks {
         display: none;
     }
+
+    #pointsEarned {
+        display: none;
+    }
+
+    #tasksCompleted {
+        display: none;
+    }
+
+    #profile {
+        display: none;
+    }
 </style>
 {% endblock %}
 {% block body %}
@@ -113,13 +124,13 @@
                     <a href="#Home" class="btn btn-info" onclick="handleHome()">Home</a>
                 </li>
                 <li>
-                    <a href="#profile" class="btn btn-primary">Profile</a>
+                    <a href="#profile" class="btn btn-primary" onclick="handleProfile()">Profile</a>
                 </li>
                 <li>
-                    <a href="#points" class="btn btn-success">Points</a>
+                    <a href="#pointsEarned" class="btn btn-success" onclick="handlePointsEarned()">Points</a>
                 </li>
                 <li>
-                    <a href="#tasks" class="btn btn-warning">Task</a>
+                    <a href="#tasksCompleted" class="btn btn-warning" onclick="handleTasksCompleted()">Tasks</a>
                 </li>
                 <li>
                     <a href="/home" class="btn btn-danger">Logout</a>
@@ -134,9 +145,9 @@
                     <img src="/media/{{ appdetail.icons }}" alt="{{appdetail.appName}}">
                 </div>
                 <div class="col-md-6">
-                    <p><span style="font-size: 35px;">{{appdetail.appName}}</span>
+                    <p style="margin: 0;"><span style="font-size: 25px;">{{appdetail.appName}}</span>
                         <br>
-                        <a href="#tasks">View in Detail></a>
+                        <a href="#tasks" style="font-size: small;">View in Detail></a>
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -147,9 +158,33 @@
         </div>
         <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="tasks">
             <div class='row'>
-                <form id="screenshotForm" action="saveScreenshot" method="POST" onsubmit="saveScreenshot()">
-                    
+                <form id="screenshotForm" action="../saveTasks" method="POST" onsubmit="submitForm()">
+                    {% csrf_token %}
                 </form>
+            </div>
+        </div>
+        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="tasksCompleted">
+            <div class="row">
+                <div class="col">
+                    <p>Tasks completed <span>{{results.tasksCompleted}}</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="pointsEarned">
+            <div class="row">
+                <div class="col">
+                    <p>Total Points earned <span>{{results.totalPoints}}</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8" style="background-color: whitesmoke; height: 583px;" id="profile">
+            <div class="row">
+                <div class="col">
+                    <p>Name {{username}}</p>
+                    <p> Tasks completed <span>{{results.tasksCompleted}}</span></p>
+                    <p>Remaining Tasks <span>{{remainingTasks}}</span></p>
+                    <p>Total Points earned <span>{{results.totalPoints}}</span></p>
+                </div>
             </div>
         </div>
     </div>
@@ -157,14 +192,47 @@
 <script>
     var formData = new FormData(document.getElementById('screenshotForm'));
 
-    function handleHome(){
+    function handlePointsEarned() {
+        document.getElementById('pointsEarned').style.display = 'block';
+        document.getElementById('Home').style.display = 'none';
+        document.getElementById('profile').style.display = 'none';
+        document.getElementById('tasksCompleted').style.display = 'none';
         document.getElementById('tasks').style.display = 'none';
-        document.getElementById('Home').style.display = 'block';
     }
+
+    function handleHome() {
+        document.getElementById('Home').style.display = 'block';
+        document.getElementById('profile').style.display = 'none';
+        document.getElementById('tasksCompleted').style.display = 'none';
+        document.getElementById('pointsEarned').style.display = 'none';
+        document.getElementById('tasks').style.display = 'none';
+    }
+
+    function handleTasksCompleted() {
+        document.getElementById('tasksCompleted').style.display = 'block';
+        document.getElementById('Home').style.display = 'none';
+        document.getElementById('profile').style.display = 'none';
+        document.getElementById('pointsEarned').style.display = 'none';
+        document.getElementById('tasks').style.display = 'none';
+    }
+
+    function handleProfile() {
+        document.getElementById('profile').style.display = 'block';
+        document.getElementById('tasksCompleted').style.display = 'none';
+        document.getElementById('Home').style.display = 'none';
+        document.getElementById('pointsEarned').style.display = 'none';
+        document.getElementById('tasks').style.display = 'none';
+    }
+
     function submitForm(event) {
         event.preventDefault();
+
         console.log('formData', formData);
-        fetch('../saveScreenshot', {
+        formData.set('username', document.getElementById('username').value);
+        formData.set('tasksId', document.getElementById('tasksId').value);
+        formData.set('points', document.getElementById('points').value);
+
+        fetch('../saveTasks', {
             method: 'POST',
             body: formData,
         }).catch(error => console.error('Error', error));
@@ -201,27 +269,31 @@
                 reader.onload = function (e) {
                     var img = new Image();
                     img.src = e.target.result;
-                    img.id = 'screenshot';
+                    img.id = 'screenShot';
                     dropArea.appendChild(img);
                 };
-                formData.set('screenshot', file, file.name);
+                formData.set('screenShot', file, file.name);
                 reader.readAsDataURL(file);
             } else {
                 alert('Please upload only .jpg, .jpeg or .png files.');
             }
         }
     }
-    function handleDropAreaClick(event){
-        document.getElementById('screenshot').click();
-    /*document.getElementById('dropArea').addEventListener('click', function () {
-        document.getElementById('screenshot').click();
-    })*/
-}
+    function handleDropAreaClick(event) {
+        document.getElementById('screenShot').click();
+        /*document.getElementById('dropArea').addEventListener('click', function () {
+            document.getElementById('screenShot').click();
+        })*/
+    }
 
     function generateDetails(event, appdetail) {
         event.preventDefault();
         var appdetail = JSON.parse(appdetail.replace(/'/g, "\""));
         document.getElementById('Home').style.display = 'none';
+        document.getElementById('profile').style.display = 'none';
+        document.getElementById('tasksCompleted').style.display = 'none';
+        document.getElementById('Home').style.display = 'none';
+        document.getElementById('pointsEarned').style.display = 'none';
         s = `<div class="row details rounded border" style="height:unset">
                 <div class="col-md-2 imgHeight">
                     <img src="/media/${appdetail.icons}" alt="${appdetail.appName}">
@@ -235,13 +307,16 @@
                     <span class="border rounded bg-success right" >${appdetail.points} Points</span>
                 </div>
                 <div class='row'>
-                    <form id="screenshotForm" action="saveScreenshot" method="POST" onsubmit="saveScreenshot()">
+                    <form id="screenshotForm" action="../saveTasks" method="POST" onsubmit="submitForm(event)">
                         {% csrf_token %}
                         <div id="dropArea" ondragover="allowDrop(event)" ondrop="handleDrop(event)" style="background-color:white;" onclick="handleDropAreaClick()">
                             <p>Drap and drop screenshot here or click to select image.</p>
-                            <input type="file" id="screenshot" name="screenshot" accept=".jpg, .jpeg, .png" style="display: none;"
+                            <input type="file" id="screenShot" name="screenShot" accept=".jpg, .jpeg, .png" style="display: none;"
                                 onchange="handleFileSelect(event)">
                         </div>
+                        <input type='text' name='username' value={{username}} id='username' style='display:none;' readonly >
+                        <input type='number' name='tasksId' value=${appdetail.id} id='tasksId' style='display:none;' readonly>
+                        <input type='number' name='points' value=${appdetail.points} id='points' style='display:none;' readonly>
                         <input type='submit' class='btn btn-danger' value='Save'>
                     </form>
                 </div>
