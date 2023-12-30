@@ -3,6 +3,17 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+'''
+URLS or API endpoints:
+    /home leads to login page.
+    /home/signOn is to handle register, login fuctionalites.
+    /home/app/<str:username> is to handle admin view.
+    /home/register leads to register page.
+    /home/addApps is to handle functinality of adding app details to database.
+    /home/addApps/<int:id> is to handle delete funcionality of app details in admin view.
+    /home/saveTasks is to handle saving tasks completed by user.
+'''
+
 urlpatterns = [
     path('',views.index),
     path('signOn', views.signOn, name='signOn'),

@@ -1,28 +1,49 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.db import models
-
 from .models import LoginDetails, AppDetails, TaskDetails
 from .serializers import LoginSerializer, AppDetailsSerializer, TaskDetailsSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 import logging
-# Create your views here.
+
+'''
+Views module contains following functions:
+index, register, signOn(api_view), app, addApps(api_view), saveTasks(api_view)
+'''
+
+
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s-[%(levelname)s] [%(threadName)s] (%(module)s):%(lineno)d %(message)s",
                     filename='logging.log')
 
+
 def index(request):
+    '''
+    index function returns login page.
+    '''
     return render(request,'login.html')
 
+
 def register(request):
+    '''
+    register fuction returns register page.
+    '''
     return render(request, 'register.html')
 
 
 @api_view(['GET', 'POST', 'PUT'])
 def signOn(request):
+    '''
+    signOn function uses api_view of the django rest framework to handle api requests related to signOn functionality.
+    GET - checks the user login credentials if verified redirects to app function.
+    POST - Stores the user login credentioal to LoginDetails database.
+    It returns mydict(type dictionary) as context containing either verify or error key.
+    '''
+
     if request.method == 'GET':
+        logging.info('In signOn GET is triggered.')
         mydict = {}
         if request.GET:
             username = request.GET['username']
@@ -31,12 +52,15 @@ def signOn(request):
             for login in logins:
                 if username == login['username'] and password == login['password']:
                     return redirect(f'app/{username}')
-                else:
-                    mydict['error'] = True
+            else:
+                logging.info(f'could not found username {username}')
+                mydict['error'] = True
             return render(request, 'login.html', context=mydict)
         else:
             return render(request, 'login.html')
+        
     elif request.method == 'POST':
+        logging.info('In signOn POST is triggered.')
         mydict={}
         if LoginDetails.objects.filter(username=request.POST['username']).exists():
             logging.debug('Username already existed.')
@@ -50,25 +74,36 @@ def signOn(request):
             serializer.save()
             return render(request, 'register.html',{'verify':True})
         else:
+            logging.debug(f"Couldn't save login details as recieved data is not valid. Recieved data {serializer.validated_data}")
             mydict['error'] = True
             return render(request, 'register.html', context=mydict)
 
+    else:
+        logging.info("Recieved request is neither GET or POST.")
+        return Response(status=status.HTTP_400_BAD_REQUEST)
         
 def app(request, *args, **kwargs):
+    '''
+    app function is to render page view based on user. If admin render admin template else render user template.
+    Returns mydict(type dictionary) as context. It contains username(string), appDetails(list of dictionaries) as common for admin and user.
+    Additionaly for user it contains remainingTasks(int), results(dict)
+    '''
     username = kwargs['username']
     mydict = {
         'username': username,
     }
     appDetails = AppDetails.objects.all().values()
-    print('appDetails',type(appDetails))
+    #print('appDetails',type(appDetails))
     mydict['appDetails'] = appDetails
     if username == 'admin':
+        logging.info('username is admin returning admin page.')
         return render(request,'admin.html',context=mydict)
     else:
         logging.info('Username is not admin returning user page.')
+
         try:
             tasksIdList = TaskDetails.objects.filter(username = username).values('tasksId')
-            logging.info('fetching tasks id list {}'.format(tasksIdList))
+            logging.info('fetching tasks id list.')
         except Exception as e:
             logging.debug('Error occured while fetching tasks ids from tasksdetails table in app function {}'.format(e))
             return render(request, 'user.html', {'error':True})
@@ -77,20 +112,23 @@ def app(request, *args, **kwargs):
             results = TaskDetails.objects.filter(username = username).aggregate(
                 totalPoints = models.Sum('points'),
                 tasksCompleted = models.Count('tasksId')
-                )
+            )
         except Exception as e:
             logging.debug('Error occured while fetching user task Details {}'.format(e))
             return render(request, 'user.html', {'error':True})
         
         mydict['remainingTasks'] = len(appDetails) - results['tasksCompleted']
+        
+        #This block is to return tasks(appDetails) that are not completed by user.
         if tasksIdList:
             logging.info('fetched list of tasksIds is {}'.format(tasksIdList))
             appDetails = list(appDetails)
-            for i in tasksIdList:
-                for j in appDetails:
-                    if i['tasksId'] == j['id']:
-                        appDetails.remove(j)
+            for taskId in tasksIdList:
+                for appDetail in appDetails:
+                    if taskId['tasksId'] == appDetail['id']:
+                        appDetails.remove(appDetail)
             mydict['appDetails'] = appDetails
+
         if results['totalPoints']:
             mydict['results'] = results
         else:
@@ -103,8 +141,30 @@ def app(request, *args, **kwargs):
     
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
 def addApps(request,id='', *args, **kwargs):
-    if request.method == 'POST':
-        logging.info('Recieved app data in addApps post method {}'.format(request.data))
+    '''
+    addApps function uses api_view of the django rest framework to handle api requests related to Apps functionality.
+    GET - returns deatils of apps in json format.
+    POST - stores app details into AppDetails data base.
+    DELETE - deletes app details based on id found in url.
+    '''
+
+    if request.method == 'GET':
+        logging.info('GET in addApps is triggered.')
+        #checks for given id.
+        if id:
+            try:
+                appDetail = AppDetails.objects.all().get(pk=id)
+                serializer = AppDetailsSerializer(appDetail)
+                return Response(serializer.data,status=status.HTTP_200_OK)
+            except Exception as e:
+                logging.debug(f"Couldn't found appDetail with id {id}. Occured error {e}")
+                return Response(status=status.HTTP_404_NOT_FOUND)
+        appDetails = AppDetails.objects.all().values()
+        serializer = AppDetailsSerializer(appDetails, many = True)
+        return Response(serializer.data,status=status.HTTP_200_OK)
+    
+    elif request.method == 'POST':
+        logging.info('Recieved app data in addApps post method.')
         try:
             serializer = AppDetailsSerializer(data=request.data)
         except Exception as e:
@@ -116,6 +176,7 @@ def addApps(request,id='', *args, **kwargs):
         else:
             logging.debug('Error occured while saving the data {e}'.format(e))
             return render(request, 'admin.html',{'error':True})
+        
     elif request.method == 'DELETE':
         try:
             appdetails = AppDetails.objects.all().get(pk=id)
@@ -125,11 +186,36 @@ def addApps(request,id='', *args, **kwargs):
         if appdetails:
             appdetails.delete()
             return render(request, 'admin.html',{'verify':True})
+    
+    else:
+        logging.info('Recieved request which is not GET, POST, DELETE')
+        return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['GET', 'POST'])
-def saveTasks(request, *args, **kwargs):
-    if request.method == 'POST':
+def saveTasks(request,id='', *args, **kwargs):
+    '''
+    saveTasks function uses api_view of the django rest framework to handle api requests related to tasks functionality.
+    GET - Send details related to the tasks completed by user.
+    POST - Stores tasks completion details to TasksDetails database.
+    '''
+    #id = kwargs['id']
+    if request.method == 'GET':
+        logging.info('GET in saveTasks is triggered.')
+        #checks for given id.
+        if id:
+            try:
+                taskDetail = TaskDetails.objects.all().get(pk=id)
+                serializer = TaskDetailsSerializer(taskDetail)
+                return Response(serializer.data,status=status.HTTP_200_OK)
+            except Exception as e:
+                logging.debug(f"Couldn't found appDetail with id {id}. Occured error {e}")
+                return Response(status=status.HTTP_404_NOT_FOUND)
+        taskDetails = TaskDetails.objects.all().values()
+        serializer = TaskDetailsSerializer(taskDetails, many = True)
+        return Response(serializer.data,status=status.HTTP_200_OK)
+    
+    elif request.method == 'POST':
         try:
             serializer = TaskDetailsSerializer(data=request.data)
         except Exception as e:
