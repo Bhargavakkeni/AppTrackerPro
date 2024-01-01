@@ -26,7 +26,10 @@ string='''{
         }
     ]
 }'''
+
+#finds all numbers that has ":" before to it.
 result = re.findall(r':(\d+)',string)
+
 if result:
     print(list(map(int,result)))
     

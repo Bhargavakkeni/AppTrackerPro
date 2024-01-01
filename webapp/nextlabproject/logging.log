@@ -2659,3 +2659,90 @@ ValueError: dictionary update sequence element #0 has length 3; 2 is required
 2024-01-01 11:18:24,301-[INFO] [Thread-33 (process_request_thread)] (views):139 fetching tasks id list.
 2024-01-01 11:18:24,320-[INFO] [Thread-33 (process_request_thread)] (views):157 fetched list of tasksIds is <QuerySet [{'tasksId': 1}]>
 2024-01-01 11:22:19,364-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2024-01-01 12:16:25,042-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 13:41:20,846-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:41:21,060-[INFO] [Thread-1 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:41:21,131-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:41:21,133-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:41:21,137-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:41:21,137-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:41:24,693-[INFO] [Thread-2 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:41:24,717-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:41:24,717-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:41:24,727-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:41:24,730-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:43:07,120-[INFO] [Thread-5 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:43:07,141-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:43:07,142-[WARNING] [Thread-6 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:43:07,149-[WARNING] [Thread-6 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:43:07,153-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:43:16,238-[INFO] [Thread-5 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:43:16,445-[INFO] [Thread-5 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:43:16,471-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:43:16,474-[WARNING] [Thread-6 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:43:16,487-[WARNING] [Thread-6 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:43:16,491-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:43:56,574-[INFO] [Thread-5 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:43:56,599-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:43:56,606-[WARNING] [Thread-6 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:43:56,614-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:43:56,614-[WARNING] [Thread-6 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:43:57,657-[INFO] [Thread-6 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:43:57,697-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:43:57,697-[WARNING] [Thread-6 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:43:57,697-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:43:57,709-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:45:50,909-[INFO] [Thread-5 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:45:50,938-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:45:50,941-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:45:50,948-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:45:50,950-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:45:51,982-[INFO] [Thread-5 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:45:52,001-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:45:52,003-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:45:52,012-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:45:52,012-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:45:56,237-[INFO] [Thread-7 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:45:56,335-[INFO] [Thread-7 (process_request_thread)] (views):62 could not found username admin1
+2024-01-01 13:46:09,767-[INFO] [Thread-7 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:46:09,963-[INFO] [Thread-7 (process_request_thread)] (views):62 could not found username user1
+2024-01-01 13:46:21,162-[INFO] [Thread-7 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:46:21,378-[INFO] [Thread-7 (process_request_thread)] (views):135 Username is not admin returning user page.
+2024-01-01 13:46:21,378-[INFO] [Thread-7 (process_request_thread)] (views):139 fetching tasks id list.
+2024-01-01 13:46:21,404-[INFO] [Thread-7 (process_request_thread)] (views):157 fetched list of tasksIds is <QuerySet [{'tasksId': 1}]>
+2024-01-01 13:46:21,490-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:46:21,490-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:46:21,502-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:46:29,959-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:46:34,957-[INFO] [Thread-7 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:46:35,157-[INFO] [Thread-7 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:46:35,207-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:46:35,208-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:46:35,224-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:46:35,225-[WARNING] [Thread-7 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:47:43,891-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 13:47:46,886-[INFO] [Thread-2 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:47:46,931-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:47:46,931-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:47:46,937-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:47:46,939-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:47:49,579-[INFO] [Thread-1 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:47:49,612-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:47:49,612-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:47:49,620-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:47:49,620-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:48:07,937-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\urls.py changed, reloading.
+2024-01-01 13:48:10,671-[INFO] [Thread-1 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:48:10,717-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/facebook_xc2cxbj.jpeg
+2024-01-01 13:48:10,717-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/editing.jpeg
+2024-01-01 13:48:10,721-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Instagram.jpeg
+2024-01-01 13:48:10,721-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/pubg.jpeg
+2024-01-01 13:48:36,482-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\urls.py changed, reloading.
+2024-01-01 13:48:40,960-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 13:48:48,738-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 13:49:05,933-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:49:06,115-[INFO] [Thread-1 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 13:49:18,975-[INFO] [Thread-2 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 13:49:19,180-[INFO] [Thread-2 (process_request_thread)] (views):135 Username is not admin returning user page.
+2024-01-01 13:49:19,180-[INFO] [Thread-2 (process_request_thread)] (views):139 fetching tasks id list.
+2024-01-01 13:49:19,196-[INFO] [Thread-2 (process_request_thread)] (views):157 fetched list of tasksIds is <QuerySet [{'tasksId': 1}]>
