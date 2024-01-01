@@ -32,8 +32,14 @@ def register(request):
     '''
     return render(request, 'register.html')
 
+def registerAdmin(request):
+    '''
+    registerAdmin function returns page for admin registration
+    '''
+    return render(request, 'registeradmin.html')
 
-@api_view(['GET', 'POST', 'PUT'])
+
+@api_view(['GET', 'POST', 'PUT', 'DELETE'])
 def signOn(request):
     '''
     signOn function uses api_view of the django rest framework to handle api requests related to signOn functionality.
@@ -77,6 +83,32 @@ def signOn(request):
             logging.debug(f"Couldn't save login details as recieved data is not valid. Recieved data {serializer.validated_data}")
             mydict['error'] = True
             return render(request, 'register.html', context=mydict)
+        
+    elif request.method == 'PUT':
+        logging.info('In signOn PUT is triggered.')
+        try:
+            object = LoginDetails.objects.all().get(username = username)
+        except Exception as e:
+            logging.debug(f"Error occured while fetchig user details in PUT.")
+            return render(request, 'login.html',{'error':True})
+        serializer = LoginSerializer(object, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return render(request, 'login.html')
+        else:
+            logging.debug(f"Couldn't update logindetails as recieved data is not valid.")
+            return render(request,'login.html',{'error':True})
+        
+    elif request.method == 'DELETE':
+        logging.info('In signON DELETE is triggered.')
+        try:
+            object = LoginDetails.objects.all().get(username = username)
+        except Exception as e:
+            logging.debug(f"Error occured while fetchig user details in DELETE.")
+            return render(request, 'login.html',{'error':True})
+        if object:
+            object.delete()
+            return render(request, 'login.html')
 
     else:
         logging.info("Recieved request is neither GET or POST.")
@@ -95,7 +127,8 @@ def app(request, *args, **kwargs):
     appDetails = AppDetails.objects.all().values()
     #print('appDetails',type(appDetails))
     mydict['appDetails'] = appDetails
-    if username == 'admin':
+    check = list(LoginDetails.objects.filter(username = username).values())
+    if check[0]['admin'] == True:
         logging.info('username is admin returning admin page.')
         return render(request,'admin.html',context=mydict)
     else:
@@ -176,6 +209,21 @@ def addApps(request,id='', *args, **kwargs):
         else:
             logging.debug('Error occured while saving the data {e}'.format(e))
             return render(request, 'admin.html',{'error':True})
+    
+    elif request.method == 'PUT':
+        logging.info('In addApps PUT is triggered.')
+        try:
+            object = AppDetails.objects.all().get(pk = id)
+        except Exception as e:
+            logging.debug(f"Error occured while fetchig app details in PUT.")
+            return render(request, 'admin.html',{'error':True})
+        serializer = AppDetailsSerializer(object, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return render(request, 'admin.html')
+        else:
+            logging.debug(f"Couldn't update app details as recieved data is not valid.")
+            return render(request,'admin.html',{'error':True})
         
     elif request.method == 'DELETE':
         try:
@@ -192,7 +240,7 @@ def addApps(request,id='', *args, **kwargs):
         return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST', 'PUT', 'DELETE'])
 def saveTasks(request,id='', *args, **kwargs):
     '''
     saveTasks function uses api_view of the django rest framework to handle api requests related to tasks functionality.
@@ -227,3 +275,32 @@ def saveTasks(request,id='', *args, **kwargs):
         else:
             logging.debug('Error while saving the data. Recieved data {}'.format(serializer.validated_data))
             return render(request, 'user.html', {'error':False})
+    
+    elif request.method == 'PUT':
+        logging.info('In saveTasks PUT is triggered.')
+        try:
+            object = TaskDetails.objects.all().get(pk = id)
+        except Exception as e:
+            logging.debug(f"Error occured while fetchig task details in PUT.")
+            return render(request, 'user.html',{'error':True})
+        serializer = TaskDetailsSerializer(object, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return render(request, 'user.html')
+        else:
+            logging.debug(f"Couldn't update task details as recieved data is not valid.")
+            return render(request,'user.html',{'error':True})
+        
+    elif request.method == 'DELETE':
+        try:
+            taskDetails = TaskDetails.objects.all().get(pk=id)
+        except Exception as e:
+            logging.debug('Error while fetching Task Details with id {} in saveTasks delete request method'.format(id))
+            return render(request, 'user.html', {'error':True})
+        if taskDetails:
+            taskDetails.delete()
+            return render(request, 'user.html', {'verify':True})
+    
+    else:
+        logging.info('Recieved request is not GET, POST, PUT, DELETE')
+        return Response(status=status.HTTP_400_BAD_REQUEST)

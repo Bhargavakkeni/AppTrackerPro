@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'nextlabproject.urls'
@@ -77,8 +78,11 @@ WSGI_APPLICATION = 'nextlabproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'nextlabproject',
+        'USER' : 'postgres',
+        'PASSWORD' : 'Bhargav@1105',
+        'HOST' : 'localhost',
     }
 }
 
@@ -123,9 +127,11 @@ MEDIA_ROOT = BASE_DIR/'media'
 
 #STATIC_ROOT = BASE_DIR/'productionfiles'
 
+STATIC_ROOT=BASE_DIR/'productionfiles'
+
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
+STATICFILES_DIRS=[
     BASE_DIR/'static'
 ]
 
