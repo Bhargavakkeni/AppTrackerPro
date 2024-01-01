@@ -48,6 +48,7 @@ Run migrations:
 python manage.py migrate
 ```
 <h3>Usage</h3>
+
 Run the development server:
 ```python
 python manage.py runserver
