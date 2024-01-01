@@ -3045,3 +3045,6 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2024-01-01 19:19:11,660-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
 2024-01-01 19:19:21,144-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
 2024-01-01 19:19:21,166-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:19:49,493-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:19:49,516-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:20:44,724-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
