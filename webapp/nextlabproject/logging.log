@@ -3097,3 +3097,21 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2024-01-01 19:34:55,068-[INFO] [Thread-5 (process_request_thread)] (views):59 Redirecting to app view
 2024-01-01 19:34:55,134-[INFO] [Thread-5 (process_request_thread)] (views):130 username is admin returning admin page.
 2024-01-01 19:34:55,221-[INFO] [Thread-5 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:43:55,007-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:43:55,073-[INFO] [Thread-1 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:43:55,146-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:43:55,246-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:44:15,784-[INFO] [Thread-3 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:45:06,050-[INFO] [Thread-5 (process_request_thread)] (views):198 Recieved app data in addApps post method.
+2024-01-01 19:45:08,593-[INFO] [Thread-5 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:45:28,281-[INFO] [Thread-5 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:45:28,344-[INFO] [Thread-5 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:45:28,403-[INFO] [Thread-5 (process_request_thread)] (views):133 Username is not admin returning user page.
+2024-01-01 19:45:28,403-[INFO] [Thread-5 (process_request_thread)] (views):137 fetching tasks id list.
+2024-01-01 19:45:28,421-[INFO] [Thread-5 (process_request_thread)] (views):155 fetched list of tasksIds is <QuerySet [{'tasksId': 1}, {'tasksId': 4}, {'tasksId': 3}]>
+2024-01-01 19:45:28,503-[INFO] [Thread-5 (process_request_thread)] (views):133 Username is not admin returning user page.
+2024-01-01 19:45:28,504-[INFO] [Thread-5 (process_request_thread)] (views):137 fetching tasks id list.
+2024-01-01 19:45:28,513-[INFO] [Thread-5 (process_request_thread)] (views):155 fetched list of tasksIds is <QuerySet [{'tasksId': 1}, {'tasksId': 4}, {'tasksId': 3}]>
+2024-01-01 19:46:00,265-[INFO] [Thread-5 (process_request_thread)] (views):133 Username is not admin returning user page.
+2024-01-01 19:46:00,266-[INFO] [Thread-5 (process_request_thread)] (views):137 fetching tasks id list.
+2024-01-01 19:46:00,277-[INFO] [Thread-5 (process_request_thread)] (views):155 fetched list of tasksIds is <QuerySet [{'tasksId': 1}, {'tasksId': 4}, {'tasksId': 3}, {'tasksId': 10}]>
