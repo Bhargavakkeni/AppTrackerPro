@@ -3048,3 +3048,18 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2024-01-01 19:19:49,493-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
 2024-01-01 19:19:49,516-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
 2024-01-01 19:20:44,724-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 19:21:33,839-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:21:33,867-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:21:33,867-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:21:40,202-[INFO] [Thread-2 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:21:40,227-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:21:43,072-[INFO] [Thread-2 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:21:57,460-[INFO] [Thread-2 (process_request_thread)] (views):198 Recieved app data in addApps post method.
+2024-01-01 19:21:59,050-[INFO] [Thread-2 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:21:59,063-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics_NChshOR.jpeg
+2024-01-01 19:22:46,627-[INFO] [Thread-2 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:22:46,641-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics_NChshOR.jpeg
+2024-01-01 19:22:50,484-[INFO] [Thread-2 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:22:57,111-[INFO] [Thread-2 (process_request_thread)] (views):198 Recieved app data in addApps post method.
+2024-01-01 19:22:58,359-[INFO] [Thread-2 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:22:58,371-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics_QH2ZzMf.jpeg
