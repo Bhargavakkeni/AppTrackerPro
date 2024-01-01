@@ -1,5 +1,5 @@
 import re
-s='''{
+string='''{
     "orders":[
         {"id":1},
         {"id":2},
@@ -26,7 +26,10 @@ s='''{
         }
     ]
 }'''
-result = re.findall(r':(\d+)',s)
+
+#finds all numbers that has ":" before to it.
+result = re.findall(r':(\d+)',string)
+
 if result:
     print(list(map(int,result)))
     

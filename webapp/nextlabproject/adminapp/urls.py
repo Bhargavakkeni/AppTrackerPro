@@ -16,6 +16,7 @@ URLS or API endpoints:
 
 urlpatterns = [
     path('',views.index),
+    path('signOn',views.signOn,name='register'),
     path('signOn/<str:username>/<str:password>', views.signOn, name='signOn'),
     path('app/<str:username>', views.app, name='adminhome'),
     path('register', views.register,name='register'),
