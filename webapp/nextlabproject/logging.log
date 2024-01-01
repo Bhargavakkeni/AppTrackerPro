@@ -3030,3 +3030,4 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2024-01-01 19:16:17,909-[INFO] [Thread-5 (process_request_thread)] (views):132 username is admin returning admin page.
 2024-01-01 19:16:17,924-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
 2024-01-01 19:16:17,929-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:17:11,806-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
