@@ -2658,3 +2658,72 @@ ValueError: dictionary update sequence element #0 has length 3; 2 is required
 2024-01-01 11:18:24,300-[INFO] [Thread-33 (process_request_thread)] (views):135 Username is not admin returning user page.
 2024-01-01 11:18:24,301-[INFO] [Thread-33 (process_request_thread)] (views):139 fetching tasks id list.
 2024-01-01 11:18:24,320-[INFO] [Thread-33 (process_request_thread)] (views):157 fetched list of tasksIds is <QuerySet [{'tasksId': 1}]>
+2024-01-01 15:32:12,731-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /
+2024-01-01 15:39:45,570-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:39:54,628-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:40:05,897-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:40:14,969-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:40:17,951-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:40:27,457-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:40:51,339-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:40:54,368-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:40:59,279-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:41:06,612-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:41:26,255-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:41:29,232-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:41:32,099-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:41:59,717-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:03,724-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:07,655-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:11,630-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:14,491-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:18,279-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:24,230-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:32,277-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:42:36,170-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:43:23,129-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /home/signOn/bhargav
+2024-01-01 15:44:01,646-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 15:44:08,666-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 15:44:17,813-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:44:20,676-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:44:24,574-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:44:29,464-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:44:39,820-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:44:49,968-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:45:03,532-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 15:49:37,316-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:49:43,553-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:49:46,444-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:49:58,004-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 15:53:56,517-[INFO] [Thread-4 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 15:58:04,673-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:02,657-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:08,844-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:14,856-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:27,076-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:33,321-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:39,262-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:42,174-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 15:59:50,606-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:00:10,918-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:00:13,817-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:00:16,817-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:00:19,691-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:00:27,824-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:00:32,732-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:00:44,933-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:01:11,131-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 16:01:17,459-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 16:04:06,464-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 16:04:53,443-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:04:58,284-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:05:09,882-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 16:06:47,573-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:07:07,305-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:07:24,839-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:07:29,796-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:07:32,718-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:07:38,796-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:07:59,635-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 16:08:21,440-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 16:08:39,998-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
