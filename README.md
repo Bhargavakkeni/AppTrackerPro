@@ -73,7 +73,8 @@ Use Flask for lightweight applications or microservices where simplicity and fle
 
 <h2>Deployment</h2>
 
-I facilitated the deployment of this project using the railway.app web application, establishing a seamless connection to our GitHub repository and automating the deployment process by generating a Docker image. Importantly, each new commit made to the main/master branch triggers an automatic update of the Docker image on railway.app. For easy access, the live version of the project can be explored at the following link: <a>https://deploynextlabproject-production.up.railway.app/</a>. 
+I facilitated the deployment of this project using the railway.app web application, establishing a seamless connection to our GitHub repository and automating the deployment process by generating a Docker image. Importantly, each new commit made to the main/master branch triggers an automatic update of the Docker image on railway.app. For easy access, the live version of the project can be explored at the following link: 
+<a>https://deploynextlabproject-production.up.railway.app/</a>. 
 
 To register as an admin user, please use this link:
  
