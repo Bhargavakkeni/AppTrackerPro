@@ -3019,3 +3019,26 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2024-01-01 19:04:36,412-[INFO] [Thread-8 (process_request_thread)] (views):133 Username is not admin returning user page.
 2024-01-01 19:04:36,414-[INFO] [Thread-8 (process_request_thread)] (views):137 fetching tasks id list.
 2024-01-01 19:04:36,425-[INFO] [Thread-8 (process_request_thread)] (views):155 fetched list of tasksIds is <QuerySet [{'tasksId': 1}, {'tasksId': 4}]>
+2024-01-01 19:06:51,897-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 19:15:05,394-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:15:05,554-[INFO] [Thread-1 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 19:15:05,605-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:15:53,335-[INFO] [Thread-4 (process_request_thread)] (views):200 Recieved app data in addApps post method.
+2024-01-01 19:15:55,346-[INFO] [Thread-4 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 19:15:55,363-[WARNING] [Thread-4 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:15:55,365-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:16:17,909-[INFO] [Thread-5 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 19:16:17,924-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:16:17,929-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:17:11,806-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 19:18:03,644-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:18:03,670-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:18:03,675-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:18:13,598-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:18:13,647-[INFO] [Thread-1 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:18:13,704-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:18:13,778-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:18:13,802-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:18:13,803-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:19:06,236-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 19:19:11,603-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
