@@ -1752,3 +1752,879 @@ KeyError: 'id'
 2023-12-30 13:36:11,109-[INFO] [Thread-3 (process_request_thread)] (views):102 Username is not admin returning user page.
 2023-12-30 13:36:11,113-[INFO] [Thread-3 (process_request_thread)] (views):106 fetching tasks id list.
 2023-12-30 13:36:11,116-[INFO] [Thread-3 (process_request_thread)] (views):124 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}, {'tasksId': 3}, {'tasksId': 5}]>
+2023-12-31 23:21:18,671-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /favicon.ico
+2023-12-31 23:22:22,853-[INFO] [Thread-2 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:22:33,329-[INFO] [Thread-2 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:23:31,231-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:24:17,543-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:24:39,899-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:24:40,246-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 75, in signOn
+    if serializer.is_valid(raise_exception=True):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `admin` is not valid for model `LoginDetails`.
+2023-12-31 23:25:36,358-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:25:38,976-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:26:40,159-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:26:40,209-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 69, in signOn
+    request.data['admin'] = True
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\http\request.py", line 560, in __setitem__
+    self._assert_mutable()
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\http\request.py", line 557, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+2023-12-31 23:26:59,949-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:27:14,549-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:27:26,670-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:27:41,091-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:27:47,066-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:27:59,490-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:27:59,531-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 77, in signOn
+    if serializer.is_valid(raise_exception=True):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `admin` is not valid for model `LoginDetails`.
+2023-12-31 23:28:23,893-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:28:27,151-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:28:37,356-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:28:37,413-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'admin'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 69, in signOn
+    if request.POST['admin'] == 'on':
+       ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'admin'
+2023-12-31 23:29:08,432-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:29:15,385-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:29:18,165-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:30:10,248-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:30:10,286-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'admin'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 69, in signOn
+    if request.POST['admin']:
+       ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'admin'
+2023-12-31 23:30:24,342-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:30:30,350-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:30:30,387-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'admin'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 69, in signOn
+    if request.POST['admin']:
+       ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'admin'
+2023-12-31 23:33:00,076-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:33:06,488-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:33:12,409-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:33:12,438-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'admin'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 69, in signOn
+    if request.POST['admin']:
+       ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'admin'
+2023-12-31 23:35:40,038-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:35:40,065-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'admin'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 69, in signOn
+    if request.POST['admin']:
+       ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'admin'
+2023-12-31 23:35:46,702-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:35:50,361-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:35:50,392-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 79, in signOn
+    if serializer.is_valid(raise_exception=True):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `admin` is not valid for model `LoginDetails`.
+2023-12-31 23:36:29,229-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:36:38,469-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:36:44,700-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:36:47,638-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:36:51,445-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:36:56,253-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:37:01,013-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:37:14,756-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:37:19,483-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:37:19,547-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 80, in signOn
+    if serializer.is_valid(raise_exception=True):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `admin` is not valid for model `LoginDetails`.
+2023-12-31 23:37:55,356-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-31 23:39:02,319-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:39:08,190-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:39:08,239-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 80, in signOn
+    if serializer.is_valid(raise_exception=True):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `admin` is not valid for model `LoginDetails`.
+2023-12-31 23:41:17,088-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:41:17,133-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 80, in signOn
+    if serializer.is_valid(raise_exception=True):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `admin` is not valid for model `LoginDetails`.
+2023-12-31 23:41:58,576-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-31 23:42:04,379-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-31 23:42:07,111-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-31 23:42:10,818-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-31 23:42:16,834-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\models.py changed, reloading.
+2023-12-31 23:42:35,394-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:42:35,772-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table adminapp_logindetails has no column named admin
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 81, in signOn
+    serializer.save()
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\base.py", line 901, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\base.py", line 1059, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\base.py", line 1100, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table adminapp_logindetails has no column named admin
+2023-12-31 23:45:18,676-[INFO] [Thread-3 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:46:08,940-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:46:20,162-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:46:27,028-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:47:02,312-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:47:02,356-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/signOn
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 72, in signOn
+    data['admin'] = True
+    ~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\http\request.py", line 560, in __setitem__
+    self._assert_mutable()
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\http\request.py", line 557, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+2023-12-31 23:47:13,591-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:47:18,438-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:47:24,323-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:47:24,482-[WARNING] [Thread-1 (process_request_thread)] (log):241 Bad Request: /home/signOn
+2023-12-31 23:56:57,863-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:57:47,800-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:58:16,697-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2023-12-31 23:58:16,722-[WARNING] [Thread-1 (process_request_thread)] (log):241 Bad Request: /home/signOn
+2023-12-31 23:59:29,391-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:59:38,493-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2023-12-31 23:59:45,091-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2024-01-01 00:01:29,874-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2024-01-01 00:01:36,114-[INFO] [Thread-1 (process_request_thread)] (views):63 In signOn POST is triggered.
+2024-01-01 00:02:39,563-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:02:44,240-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:03:02,617-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:03:10,509-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:03:14,417-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:03:18,136-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:03:22,891-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:03:34,471-[INFO] [Thread-1 (process_request_thread)] (views):46 In signOn GET is triggered.
+2024-01-01 00:03:34,517-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin234
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 99, in app
+    if check['admin'] == True:
+       ~~~~~^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\db\models\query.py", line 418, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+2024-01-01 00:04:12,692-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:04:21,696-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:04:24,540-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:04:27,290-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:04:32,037-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:04:36,794-[INFO] [Thread-1 (process_request_thread)] (views):46 In signOn GET is triggered.
+2024-01-01 00:04:36,838-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin234
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 99, in app
+    if check['admin'] == True:
+       ~~~~~^^^^^^^^^
+TypeError: 'LoginDetails' object is not subscriptable
+2024-01-01 00:04:51,021-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:04:55,878-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:05:04,865-[INFO] [Thread-1 (process_request_thread)] (views):46 In signOn GET is triggered.
+2024-01-01 00:05:04,912-[ERROR] [Thread-1 (process_request_thread)] (log):241 Internal Server Error: /home/app/admin234
+Traceback (most recent call last):
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py", line 98, in app
+    check = dict(LoginDetails.objects.filter(username = username).values())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+2024-01-01 00:05:37,444-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:05:46,857-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:05:59,644-[INFO] [Thread-1 (process_request_thread)] (views):46 In signOn GET is triggered.
+2024-01-01 00:05:59,653-[INFO] [Thread-1 (process_request_thread)] (views):100 username is admin returning admin page.
+2024-01-01 00:07:39,138-[INFO] [Thread-2 (process_request_thread)] (views):63 In signOn POST is triggered.
+2024-01-01 00:07:42,755-[INFO] [Thread-2 (process_request_thread)] (views):46 In signOn GET is triggered.
+2024-01-01 00:07:42,765-[INFO] [Thread-2 (process_request_thread)] (views):100 username is admin returning admin page.
+2024-01-01 00:07:49,103-[INFO] [Thread-2 (process_request_thread)] (views):46 In signOn GET is triggered.
+2024-01-01 00:07:49,114-[INFO] [Thread-2 (process_request_thread)] (views):103 Username is not admin returning user page.
+2024-01-01 00:07:49,115-[INFO] [Thread-2 (process_request_thread)] (views):107 fetching tasks id list.
+2024-01-01 00:07:49,119-[INFO] [Thread-2 (process_request_thread)] (views):125 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}, {'tasksId': 3}, {'tasksId': 5}]>
+2024-01-01 00:17:42,883-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:18:29,937-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:18:32,618-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:18:36,204-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:18:38,740-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:18:42,267-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:18:44,808-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:19:08,395-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:19:18,893-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:19:34,338-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:19:48,608-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:20:13,672-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:20:28,078-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:20:57,917-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:21:00,417-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:21:04,817-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:21:08,663-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\urls.py changed, reloading.
+2024-01-01 00:21:24,100-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:21:26,815-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 00:22:16,566-[INFO] [Thread-1 (process_request_thread)] (views):68 In signOn POST is triggered.
+2024-01-01 00:22:21,470-[INFO] [Thread-1 (process_request_thread)] (views):51 In signOn GET is triggered.
+2024-01-01 00:22:21,481-[INFO] [Thread-1 (process_request_thread)] (views):105 username is admin returning admin page.
+2024-01-01 01:08:37,978-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 01:09:08,807-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 01:11:10,167-[INFO] [Thread-1 (process_request_thread)] (views):68 In signOn POST is triggered.
+2024-01-01 01:11:14,348-[INFO] [Thread-1 (process_request_thread)] (views):51 In signOn GET is triggered.
+2024-01-01 01:11:14,363-[INFO] [Thread-1 (process_request_thread)] (views):105 username is admin returning admin page.
+2024-01-01 01:11:49,782-[INFO] [Thread-5 (process_request_thread)] (views):173 Recieved app data in addApps post method.
+2024-01-01 01:11:51,413-[INFO] [Thread-5 (process_request_thread)] (views):105 username is admin returning admin page.
+2024-01-01 01:12:04,424-[INFO] [Thread-7 (process_request_thread)] (views):51 In signOn GET is triggered.
+2024-01-01 01:12:04,430-[INFO] [Thread-7 (process_request_thread)] (views):108 Username is not admin returning user page.
+2024-01-01 01:12:04,430-[INFO] [Thread-7 (process_request_thread)] (views):112 fetching tasks id list.
+2024-01-01 01:12:04,430-[INFO] [Thread-7 (process_request_thread)] (views):130 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}, {'tasksId': 3}, {'tasksId': 5}]>
+2024-01-01 01:12:26,421-[INFO] [Thread-13 (process_request_thread)] (views):108 Username is not admin returning user page.
+2024-01-01 01:12:26,421-[INFO] [Thread-13 (process_request_thread)] (views):112 fetching tasks id list.
+2024-01-01 01:12:26,421-[INFO] [Thread-13 (process_request_thread)] (views):130 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}, {'tasksId': 3}, {'tasksId': 5}, {'tasksId': 15}]>
+2024-01-01 10:51:22,819-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /favicon.ico
+2024-01-01 10:51:24,273-[INFO] [Thread-2 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 10:51:24,287-[INFO] [Thread-2 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 10:51:53,916-[INFO] [Thread-2 (process_request_thread)] (views):200 Recieved app data in addApps post method.
+2024-01-01 10:51:55,673-[INFO] [Thread-2 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 10:52:02,184-[INFO] [Thread-2 (process_request_thread)] (views):52 In signOn GET is triggered.

@@ -7,7 +7,7 @@ class LoginSerializer(serializers.ModelSerializer):
     '''
     class Meta:
         model = LoginDetails
-        fields = ['username', 'password']
+        fields = ['username', 'password','admin']
 
 class AppDetailsSerializer(serializers.ModelSerializer):
     '''

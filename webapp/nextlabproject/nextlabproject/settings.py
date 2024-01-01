@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'nextlabproject.urls'
@@ -123,9 +124,11 @@ MEDIA_ROOT = BASE_DIR/'media'
 
 #STATIC_ROOT = BASE_DIR/'productionfiles'
 
+STATIC_ROOT=BASE_DIR/'productionfiles'
+
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
+STATICFILES_DIRS=[
     BASE_DIR/'static'
 ]
 
