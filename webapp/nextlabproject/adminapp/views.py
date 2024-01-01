@@ -40,7 +40,7 @@ def registerAdmin(request):
 
 
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
-def signOn(request):
+def signOn(request, *args, **kwargs):
     '''
     signOn function uses api_view of the django rest framework to handle api requests related to signOn functionality.
     GET - checks the user login credentials if verified redirects to app function.
@@ -51,19 +51,17 @@ def signOn(request):
     if request.method == 'GET':
         logging.info('In signOn GET is triggered.')
         mydict = {}
-        if request.GET:
-            username = request.GET['username']
-            logins = LoginDetails.objects.filter(username = username).values()
-            password = request.GET['password']
-            for login in logins:
-                if username == login['username'] and password == login['password']:
-                    return redirect(f'app/{username}')
+        username = kwargs['username']
+        password = kwargs['password']
+        logins = LoginDetails.objects.filter(username = username).values()
+        for login in logins:
+            if username == login['username'] and password == login['password']:
+                logging.info('Redirecting to app view')
+                return redirect(f'/home/app/{username}')
             else:
                 logging.info(f'could not found username {username}')
                 mydict['error'] = True
-            return render(request, 'login.html', context=mydict)
-        else:
-            return render(request, 'login.html')
+        return Response(mydict,status=status.HTTP_404_NOT_FOUND)
         
     elif request.method == 'POST':
         logging.info('In signOn POST is triggered.')
