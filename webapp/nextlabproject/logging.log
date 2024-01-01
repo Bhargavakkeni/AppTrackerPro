@@ -3031,3 +3031,12 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2024-01-01 19:16:17,924-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
 2024-01-01 19:16:17,929-[WARNING] [Thread-5 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
 2024-01-01 19:17:11,806-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 19:18:03,644-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:18:03,670-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:18:03,675-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
+2024-01-01 19:18:13,598-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:18:13,647-[INFO] [Thread-1 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:18:13,704-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:18:13,778-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:18:13,802-[WARNING] [Thread-1 (process_request_thread)] (log):241 Not Found: /media/images/Music.jpeg
+2024-01-01 19:18:13,803-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics.jpeg
