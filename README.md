@@ -48,10 +48,12 @@ Run migrations:
 python manage.py migrate
 ```
 <h3>Usage</h3>
+
 Run the development server:
 ```python
 python manage.py runserver
 ```
+
 The application will be accessible at <a>http://localhost:8000/home</a>
 
 <h2>Documentation</h2>
