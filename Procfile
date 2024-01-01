@@ -1,1 +1,1 @@
-web: gunicorn 'webapp.nextlabproject.nextlabproject.wsgi'
+web: gunicorn 'webapp/nextlabproject/nextlabproject.wsgi'
