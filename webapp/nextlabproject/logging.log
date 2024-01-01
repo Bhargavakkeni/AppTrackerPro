@@ -3063,3 +3063,37 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2024-01-01 19:22:57,111-[INFO] [Thread-2 (process_request_thread)] (views):198 Recieved app data in addApps post method.
 2024-01-01 19:22:58,359-[INFO] [Thread-2 (process_request_thread)] (views):130 username is admin returning admin page.
 2024-01-01 19:22:58,371-[WARNING] [Thread-2 (process_request_thread)] (log):241 Not Found: /media/images/comics_QH2ZzMf.jpeg
+2024-01-01 19:27:53,367-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 19:28:04,759-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:28:04,809-[INFO] [Thread-1 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:28:04,868-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:28:04,943-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:28:18,066-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:28:24,979-[INFO] [Thread-1 (process_request_thread)] (views):198 Recieved app data in addApps post method.
+2024-01-01 19:28:26,868-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:28:34,678-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:28:34,726-[INFO] [Thread-1 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:28:34,779-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:28:34,844-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:32:04,506-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:32:04,567-[INFO] [Thread-1 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:32:04,638-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:32:04,741-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:32:55,845-[INFO] [Thread-1 (process_request_thread)] (views):198 Recieved app data in addApps post method.
+2024-01-01 19:32:58,516-[INFO] [Thread-1 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:33:19,658-[INFO] [Thread-1 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:33:19,746-[INFO] [Thread-1 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:33:19,818-[INFO] [Thread-1 (process_request_thread)] (views):133 Username is not admin returning user page.
+2024-01-01 19:33:19,820-[INFO] [Thread-1 (process_request_thread)] (views):137 fetching tasks id list.
+2024-01-01 19:33:19,840-[INFO] [Thread-1 (process_request_thread)] (views):155 fetched list of tasksIds is <QuerySet [{'tasksId': 1}, {'tasksId': 4}]>
+2024-01-01 19:33:19,938-[INFO] [Thread-1 (process_request_thread)] (views):133 Username is not admin returning user page.
+2024-01-01 19:33:19,938-[INFO] [Thread-1 (process_request_thread)] (views):137 fetching tasks id list.
+2024-01-01 19:33:19,945-[INFO] [Thread-1 (process_request_thread)] (views):155 fetched list of tasksIds is <QuerySet [{'tasksId': 1}, {'tasksId': 4}]>
+2024-01-01 19:33:59,725-[INFO] [Thread-5 (process_request_thread)] (views):133 Username is not admin returning user page.
+2024-01-01 19:33:59,726-[INFO] [Thread-5 (process_request_thread)] (views):137 fetching tasks id list.
+2024-01-01 19:33:59,739-[INFO] [Thread-5 (process_request_thread)] (views):155 fetched list of tasksIds is <QuerySet [{'tasksId': 1}, {'tasksId': 4}, {'tasksId': 3}]>
+2024-01-01 19:34:48,490-[INFO] [Thread-5 (process_request_thread)] (views):67 In signOn POST is triggered.
+2024-01-01 19:34:55,004-[INFO] [Thread-5 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 19:34:55,068-[INFO] [Thread-5 (process_request_thread)] (views):59 Redirecting to app view
+2024-01-01 19:34:55,134-[INFO] [Thread-5 (process_request_thread)] (views):130 username is admin returning admin page.
+2024-01-01 19:34:55,221-[INFO] [Thread-5 (process_request_thread)] (views):130 username is admin returning admin page.
