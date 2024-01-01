@@ -2634,3 +2634,27 @@ ValueError: dictionary update sequence element #0 has length 3; 2 is required
 2024-01-01 10:52:16,387-[INFO] [Thread-3 (process_request_thread)] (views):135 Username is not admin returning user page.
 2024-01-01 10:52:16,387-[INFO] [Thread-3 (process_request_thread)] (views):139 fetching tasks id list.
 2024-01-01 10:52:16,390-[INFO] [Thread-3 (process_request_thread)] (views):157 fetched list of tasksIds is <QuerySet [{'tasksId': 2}, {'tasksId': 1}, {'tasksId': 3}, {'tasksId': 5}, {'tasksId': 15}, {'tasksId': 6}]>
+2024-01-01 10:53:56,004-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\adminapp\views.py changed, reloading.
+2024-01-01 10:56:37,721-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 10:56:43,161-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 10:56:49,167-[INFO] [MainThread] (autoreload):266 C:\Users\ganes\OneDrive\Desktop\NextLabs\webapp\nextlabproject\nextlabproject\settings.py changed, reloading.
+2024-01-01 11:13:23,315-[INFO] [Thread-8 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 11:13:23,318-[INFO] [Thread-8 (process_request_thread)] (views):62 could not found username admin
+2024-01-01 11:13:42,198-[INFO] [Thread-11 (process_request_thread)] (views):69 In signOn POST is triggered.
+2024-01-01 11:13:45,197-[INFO] [Thread-11 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 11:13:45,257-[INFO] [Thread-11 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 11:14:09,710-[INFO] [Thread-15 (process_request_thread)] (views):200 Recieved app data in addApps post method.
+2024-01-01 11:14:11,373-[INFO] [Thread-15 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 11:15:25,645-[INFO] [Thread-17 (process_request_thread)] (views):200 Recieved app data in addApps post method.
+2024-01-01 11:15:27,165-[INFO] [Thread-17 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 11:16:10,907-[INFO] [Thread-20 (process_request_thread)] (views):200 Recieved app data in addApps post method.
+2024-01-01 11:16:12,270-[INFO] [Thread-20 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 11:17:37,272-[INFO] [Thread-23 (process_request_thread)] (views):200 Recieved app data in addApps post method.
+2024-01-01 11:17:38,861-[INFO] [Thread-23 (process_request_thread)] (views):132 username is admin returning admin page.
+2024-01-01 11:18:03,416-[INFO] [Thread-28 (process_request_thread)] (views):69 In signOn POST is triggered.
+2024-01-01 11:18:11,405-[INFO] [Thread-28 (process_request_thread)] (views):52 In signOn GET is triggered.
+2024-01-01 11:18:11,457-[INFO] [Thread-28 (process_request_thread)] (views):135 Username is not admin returning user page.
+2024-01-01 11:18:11,457-[INFO] [Thread-28 (process_request_thread)] (views):139 fetching tasks id list.
+2024-01-01 11:18:24,300-[INFO] [Thread-33 (process_request_thread)] (views):135 Username is not admin returning user page.
+2024-01-01 11:18:24,301-[INFO] [Thread-33 (process_request_thread)] (views):139 fetching tasks id list.
+2024-01-01 11:18:24,320-[INFO] [Thread-33 (process_request_thread)] (views):157 fetched list of tasksIds is <QuerySet [{'tasksId': 1}]>
