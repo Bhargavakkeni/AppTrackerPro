@@ -1,5 +1,5 @@
 import re
-s='''{
+string='''{
     "orders":[
         {"id":1},
         {"id":2},
@@ -26,7 +26,7 @@ s='''{
         }
     ]
 }'''
-result = re.findall(r':(\d+)',s)
+result = re.findall(r':(\d+)',string)
 if result:
     print(list(map(int,result)))
     
